@@ -31,6 +31,7 @@ export default function Home() {
         <div className={`container ${styles.heroContent}`}>
           <div className={styles.heroTextWrapper}>
             <h1 className={`${styles.heroHeading} kinetic-hover`}>
+              <span className="sr-only">Saraah Creation — Film Production, Advertising, Branding & Creative Agency</span>
               <SplitText
                 text="VISION."
                 tag="span"
