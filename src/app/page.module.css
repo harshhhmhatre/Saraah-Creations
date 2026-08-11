@@ -976,6 +976,11 @@
 }
 
 @media (max-width: 768px) {
+  .heroBgImage {
+    object-fit: contain;
+    object-position: top;
+  }
+
   .heroHeading {
     font-size: clamp(2.8rem, 10vw, 4rem);
   }
