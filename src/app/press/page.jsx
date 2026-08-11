@@ -50,10 +50,10 @@ export default function Press() {
                 {/* Poster Image */}
                 <div className={styles.filmPosterWrap}>
                   <Image
-                    src="/images/aarti-poster.png"
-                    alt="Aarti: The Unknown Love Story Official Movie Poster"
-                    width={320}
-                    height={400}
+                    src="/images/aarti-horizontal.jpeg"
+                    alt="Aarti: The Unknown Love Story Official Still"
+                    width={500}
+                    height={350}
                     className={styles.filmPosterImg}
                     priority
                     unoptimized

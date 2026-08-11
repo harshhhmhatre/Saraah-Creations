@@ -54,10 +54,10 @@ export default function Portfolio() {
               <div className={styles.posterSection}>
                 <div className={styles.posterFrame}>
                   <Image
-                    src="/images/aarti-poster.png"
-                    alt="Aarti The Unknown Love Story Official Poster"
-                    width={480}
-                    height={600}
+                    src="/images/aarti-horizontal.jpeg"
+                    alt="Aarti The Unknown Love Story Official Image"
+                    width={600}
+                    height={400}
                     className={styles.posterImage}
                     priority
                     unoptimized

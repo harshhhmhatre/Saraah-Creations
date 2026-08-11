@@ -8,7 +8,7 @@ export const projectsData = [
     description: 'An emotionally resonant feature film based on the real-life story of Sunny Pawar and Aarti Makwana. A gripping narrative of courage, loyalty, and unconditional love set against the backdrop of everyday struggles.',
     outcome: 'IMDb 8.0/10 audience rating with 26 verified ratings. BookMyShow rating of 7.8/10. Official poster unveiled by former Maharashtra CM Manohar Joshi with blessings from legendary actress Waheeda Rehman.',
     gradient: 'linear-gradient(135deg, #1A1A1A 0%, #A71930 50%, #7AC943 100%)',
-    image: '/images/aarti-poster.png',
+    image: '/images/aarti-horizontal.jpeg',
     imageVertical: '/images/aarti-poster-vertical.png',
     featured: true,
     year: '2017',
