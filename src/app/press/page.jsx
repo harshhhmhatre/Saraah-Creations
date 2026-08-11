@@ -56,6 +56,7 @@ export default function Press() {
                     height={400}
                     className={styles.filmPosterImg}
                     priority
+                    unoptimized
                   />
                 </div>
 

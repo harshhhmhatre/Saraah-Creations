@@ -60,6 +60,7 @@ export default function Portfolio() {
                     height={600}
                     className={styles.posterImage}
                     priority
+                    unoptimized
                   />
                   <div className={styles.posterOverlay}></div>
                 </div>
