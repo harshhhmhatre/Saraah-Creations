@@ -18,8 +18,8 @@ export default function Home() {
       <section className={styles.hero}>
         <div className={styles.heroBg}>
           <Image
-            src="/images/abcd.png"
-            alt="Film crew operating a RED Digital Cinema camera"
+            src="/images/aarti-horizontal.jpeg"
+            alt="Aarti The Unknown Love Story"
             fill
             priority
             unoptimized
