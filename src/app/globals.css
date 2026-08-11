@@ -541,6 +541,23 @@ input, textarea, select {
   animation: gradient-shift 6s ease infinite;
 }
 
+/* --- Light Green Shimmer Text (Dynamic) --- */
+.text-light-green-shimmer {
+  background: linear-gradient(135deg, #B5D99B 0%, #8FC26B 40%, #68A742 70%, #B5D99B 100%);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 4s ease infinite;
+}
+
+[data-theme="light"] .text-light-green-shimmer {
+  background: linear-gradient(135deg, #4A7C2F 0%, #355C21 40%, #223D14 70%, #4A7C2F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 /* --- Champagne Gold Gradient Text --- */
 .text-champagne-gold {
   background: linear-gradient(135deg, #896F2F 0%, #C9A24B 40%, #A8893A 70%, #896F2F 100%);

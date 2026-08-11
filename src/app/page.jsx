@@ -271,7 +271,7 @@ export default function Home() {
       <section className={styles.quoteBanner}>
         <div className="container">
           <ScrollReveal variant="fadeUp">
-            <h2 className={`${styles.quoteText} text-emerald-shimmer glow-text-green kinetic-hover`}>
+            <h2 className={`${styles.quoteText} text-light-green-shimmer glow-text-green kinetic-hover`}>
               "Cinema is not just what you see, it's what you feel."
             </h2>
             <p className={styles.quoteAuthor}>
