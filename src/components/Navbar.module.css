@@ -49,6 +49,7 @@
   height: 85px;
   width: auto;
   object-fit: contain;
+  margin: -20px 0;
   transition: transform var(--duration-normal) var(--ease-out);
 }
 
