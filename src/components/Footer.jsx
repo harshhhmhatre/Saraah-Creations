@@ -31,13 +31,7 @@ export default function Footer() {
         {/* Brand Column */}
         <div className={styles.brandCol}>
           <Link href="/" className={styles.logo}>
-            <div className={styles.logoIcon}>
-              <Play size={12} fill="var(--parrot-green)" color="var(--parrot-green)" />
-            </div>
-            <div className={styles.logoText}>
-              <span className={styles.logoMain}>SARAAH</span>
-              <span className={styles.logoSub}>CREATION</span>
-            </div>
+            <img src="/images/icon.png" alt="Saraah Creation Logo" className={styles.logoImage} />
           </Link>
           <p className={styles.tagline}>
             Film Production • Advertising • Graphics • Sales • Marketing
