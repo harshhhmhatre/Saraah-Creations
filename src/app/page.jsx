@@ -18,8 +18,8 @@ export default function Home() {
       <section className={styles.hero}>
         <div className={styles.heroBg}>
           <Image
-            src="/images/aarti-horizontal.jpeg"
-            alt="Aarti The Unknown Love Story"
+            src="/images/abcd.png"
+            alt="Film crew operating a RED Digital Cinema camera"
             fill
             priority
             unoptimized
@@ -130,10 +130,10 @@ export default function Home() {
           {/* Right: Poster Image */}
           <div className={styles.featuredPosterWrap}>
             <Image
-              src="/images/aarti-poster.png"
-              alt="Aarti The Unknown Love Story Official Poster"
-              width={480}
-              height={600}
+              src="/images/aarti-horizontal.jpeg"
+              alt="Aarti The Unknown Love Story Official Image"
+              width={600}
+              height={400}
               className={styles.featuredPosterImg}
               priority
             />
