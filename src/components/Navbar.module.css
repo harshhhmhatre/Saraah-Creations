@@ -39,9 +39,10 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: var(--space-3);
+  gap: var(--space-2);
   text-decoration: none;
   z-index: 10;
+  justify-self: start;
 }
 
 .logoImage {
@@ -58,12 +59,13 @@
 .logoText {
   display: flex;
   flex-direction: column;
-  line-height: 1;
+  justify-content: center;
+  line-height: 1.2;
 }
 
 .logoMain {
   font-family: var(--font-display);
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   font-weight: 800;
   color: var(--text-primary);
   letter-spacing: 4px;
@@ -72,10 +74,10 @@
 
 .logoSub {
   font-family: var(--font-body);
-  font-size: 0.55rem;
+  font-size: 0.6rem;
   font-weight: 600;
   color: var(--gold);
-  letter-spacing: 5px;
+  letter-spacing: 5.5px;
   margin-top: 2px;
 }
 
