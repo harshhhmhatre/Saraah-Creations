@@ -49,15 +49,15 @@
 }
 
 .secondary {
-  background: rgba(74, 124, 47, 0.1);
-  color: #2F4A1F;
-  border: 1px solid rgba(74, 124, 47, 0.4);
+  background: var(--parrot-green-10);
+  color: var(--parrot-green);
+  border: 1px solid var(--parrot-green-glow);
 }
 
 .secondary:hover {
-  background: rgba(74, 124, 47, 0.18);
-  border-color: #2F4A1F;
-  box-shadow: 0 4px 15px rgba(74, 124, 47, 0.15);
+  background: var(--parrot-green-20);
+  border-color: var(--parrot-green);
+  box-shadow: 0 4px 15px var(--parrot-green-10);
   transform: translateY(-2px);
 }
 

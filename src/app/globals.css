@@ -81,12 +81,12 @@
   --border-color: rgba(74, 222, 128, 0.18);
   --border-subtle: rgba(74, 222, 128, 0.1);
 
-  --parrot-green: #10B981;       /* Radiant emerald green */
-  --parrot-green-light: #34D399;
-  --parrot-green-dark: #059669;
-  --parrot-green-glow: rgba(16, 185, 129, 0.35);
-  --parrot-green-10: rgba(16, 185, 129, 0.12);
-  --parrot-green-20: rgba(16, 185, 129, 0.22);
+  --parrot-green: #8FC26B;       /* Warm light green */
+  --parrot-green-light: #B5D99B;
+  --parrot-green-dark: #68A742;
+  --parrot-green-glow: rgba(143, 194, 107, 0.35);
+  --parrot-green-10: rgba(143, 194, 107, 0.12);
+  --parrot-green-20: rgba(143, 194, 107, 0.22);
 
   --gold: #D4AF37;
   --gold-light: #F3E5AB;
@@ -123,12 +123,12 @@
   --border-color: rgba(255, 255, 255, 0.2);
   --border-subtle: rgba(255, 255, 255, 0.12);
 
-  --parrot-green: #22C55E;
-  --parrot-green-light: #4ADE80;
-  --parrot-green-dark: #15803D;
-  --parrot-green-glow: rgba(34, 197, 94, 0.3);
-  --parrot-green-10: rgba(34, 197, 94, 0.1);
-  --parrot-green-20: rgba(34, 197, 94, 0.2);
+  --parrot-green: #8FC26B;
+  --parrot-green-light: #B5D99B;
+  --parrot-green-dark: #68A742;
+  --parrot-green-glow: rgba(143, 194, 107, 0.3);
+  --parrot-green-10: rgba(143, 194, 107, 0.1);
+  --parrot-green-20: rgba(143, 194, 107, 0.2);
 
   --gold: #EAB308;
   --gold-light: #FDE047;
