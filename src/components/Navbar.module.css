@@ -44,21 +44,15 @@
   z-index: 10;
 }
 
-.logoIcon {
-  width: 38px;
-  height: 38px;
-  border: 2px solid var(--gold);
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--bg-card);
-  transition: all var(--duration-normal) var(--ease-out);
+.logoImage {
+  height: 85px;
+  width: auto;
+  object-fit: contain;
+  transition: transform var(--duration-normal) var(--ease-out);
 }
 
-.logo:hover .logoIcon {
-  border-color: var(--parrot-green);
-  box-shadow: 0 0 16px rgba(122, 201, 67, 0.4);
+.logo:hover .logoImage {
+  transform: scale(1.05);
 }
 
 .logoText {

@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, Play, Camera, Film } from 'lucide-react';
+import { Menu, X, Camera, Film } from 'lucide-react';
 import { Youtube, Linkedin } from '@/components/ui/SocialIcons';
 import ThemeToggle from '@/components/ThemeToggle';
 import styles from './Navbar.module.css';
@@ -50,12 +50,10 @@ export default function Navbar() {
         <div className={`container ${styles.navContent}`}>
           {/* Logo */}
           <Link href="/" className={styles.logo}>
-            <div className={styles.logoIcon}>
-              <Play size={14} fill="var(--parrot-green)" color="var(--parrot-green)" />
-            </div>
+            <img src="/images/icon.png" alt="Saraah Creation Logo" className={styles.logoImage} />
             <div className={styles.logoText}>
               <span className={styles.logoMain}>SARAAH</span>
-              <span className={styles.logoSub}>CREATION</span>
+              <span className={styles.logoSub}>CREATIONS</span>
             </div>
           </Link>
 
