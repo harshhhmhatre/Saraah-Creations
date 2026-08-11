@@ -613,12 +613,12 @@
   text-align: center;
   gap: var(--space-2);
   padding: 1.15rem 0.95rem;
-  background: rgba(14, 24, 18, 0.85);
-  border: 1px solid rgba(200, 167, 74, 0.35);
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(200, 167, 74, 0.45);
   border-radius: var(--radius-xl);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(200, 167, 74, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.6);
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   flex: 1;
   min-width: 130px;
@@ -629,17 +629,19 @@
   transform: translateY(-5px) scale(1.03);
   border-color: var(--gold);
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.7), 0 0 25px rgba(200, 167, 74, 0.3);
-  background: rgba(22, 38, 28, 0.95);
+  background: rgba(20, 34, 25, 0.95);
 }
 
 .laurelIcon {
-  color: var(--gold);
-  filter: drop-shadow(0 0 10px rgba(200, 167, 74, 0.5));
-  transition: transform 0.3s ease;
+  color: #B58D28;
+  filter: drop-shadow(0 0 4px rgba(181, 141, 40, 0.3));
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .laurelCard:hover .laurelIcon {
+  color: var(--gold);
   transform: scale(1.15);
+  filter: drop-shadow(0 0 10px rgba(200, 167, 74, 0.6));
 }
 
 .laurelText {
@@ -653,32 +655,48 @@
   font-family: var(--font-body);
   font-size: 0.65rem;
   letter-spacing: 0.12em;
-  color: var(--gold);
+  color: #9C7720;
   text-transform: uppercase;
   font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.laurelCard:hover .laurelCategory {
+  color: #E5C365;
 }
 
 .laurelFest {
   font-family: var(--font-display);
   font-size: var(--text-md);
-  color: #FFFFFF !important;
+  color: #121A15 !important;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.3;
+  transition: color 0.3s ease;
+}
+
+.laurelCard:hover .laurelFest {
+  color: #FFFFFF !important;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .laurelYear {
   font-family: var(--font-body);
   font-size: 0.72rem;
-  color: #F8D376;
+  color: #8A6510;
   letter-spacing: 1px;
-  background: rgba(200, 167, 74, 0.15);
-  border: 1px solid rgba(200, 167, 74, 0.4);
+  background: rgba(200, 167, 74, 0.18);
+  border: 1px solid rgba(200, 167, 74, 0.45);
   padding: 0.2rem 0.75rem;
   border-radius: var(--radius-full);
   margin-top: 0.35rem;
   font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.laurelCard:hover .laurelYear {
+  color: #F8D376;
+  background: rgba(200, 167, 74, 0.25);
 }
 
 /* ============================================
