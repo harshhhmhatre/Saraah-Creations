@@ -660,9 +660,11 @@ input, textarea, select {
 
 /* --- Kinetic Hover (enhanced dramatic interaction) --- */
 .kinetic-hover {
+  cursor: pointer;
   transition: all var(--duration-normal) var(--ease-out);
 }
 .kinetic-hover:hover {
+  cursor: pointer;
   letter-spacing: 0.06em;
   transform: scale(1.02);
   filter: drop-shadow(0 0 40px rgba(61, 122, 40, 0.7)) drop-shadow(0 0 80px rgba(61, 122, 40, 0.3));
