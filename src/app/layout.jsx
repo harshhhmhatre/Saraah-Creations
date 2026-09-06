@@ -8,13 +8,13 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://saraahcreations.com
 export const metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Saraah Creation | Film Production, Advertising & Creative Agency',
-    template: '%s | Saraah Creation',
+    default: 'Sarrah Creation | Film Production, Advertising & Creative Agency',
+    template: '%s | Sarrah Creation',
   },
   description:
-    'Saraah Creation is a premier filmmaking, advertising, graphic design, branding, sales & marketing production house founded by Sarika Mahesh Mene. Directed the acclaimed Marathi feature film "Aarti: The Unknown Love Story".',
+    'Sarrah Creation is a premier filmmaking, advertising, graphic design, branding, sales & marketing production house founded by Sarika Mahesh Mene. Directed the acclaimed Marathi feature film "Aarti: The Unknown Love Story".',
   keywords: [
-    'Saraah Creation',
+    'Sarrah Creation',
     'Sarika Mahesh Mene',
     'Aarti The Unknown Love Story',
     'Film Production House Mumbai',
@@ -30,7 +30,7 @@ export const metadata = {
   ],
   authors: [{ name: 'Sarika Mahesh Mene', url: siteUrl }],
   creator: 'Sarika Mahesh Mene',
-  publisher: 'Saraah Creation',
+  publisher: 'Sarrah Creation',
   formatDetection: {
     email: false,
     address: false,
@@ -43,8 +43,8 @@ export const metadata = {
     type: 'website',
     locale: 'en_US',
     url: siteUrl,
-    siteName: 'Saraah Creation',
-    title: 'Saraah Creation | Film Production, Advertising & Creative Agency',
+    siteName: 'Sarrah Creation',
+    title: 'Sarrah Creation | Film Production, Advertising & Creative Agency',
     description:
       'Creating Cinema. Building Brands. Award-winning filmmaking, advertising, and marketing solutions by Sarika Mahesh Mene.',
     images: [
@@ -52,17 +52,17 @@ export const metadata = {
         url: '/images/abcd.png',
         width: 1200,
         height: 630,
-        alt: 'Saraah Creation — Film Production and Creative Agency',
+        alt: 'Sarrah Creation — Film Production and Creative Agency',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Saraah Creation | Film Production, Advertising & Creative Agency',
+    title: 'Sarrah Creation | Film Production, Advertising & Creative Agency',
     description:
       'Creating Cinema. Building Brands. Award-winning filmmaking, advertising, and marketing solutions by Sarika Mahesh Mene.',
     images: ['/images/abcd.png'],
-    creator: '@SaraahCreation',
+    creator: '@SarrahCreation',
   },
   robots: {
     index: true,
@@ -89,16 +89,16 @@ export default function RootLayout({ children }) {
       {
         '@type': 'Organization',
         '@id': `${siteUrl}/#organization`,
-        name: 'Saraah Creation',
+        name: 'Sarrah Creation',
         url: siteUrl,
         logo: {
           '@type': 'ImageObject',
           url: `${siteUrl}/images/icon.png`,
-          caption: 'Saraah Creation Logo',
+          caption: 'Sarrah Creation Logo',
         },
         image: `${siteUrl}/images/abcd.png`,
         description:
-          'Saraah Creation is a premier filmmaking, advertising, graphic design, and marketing production company founded by Sarika Mahesh Mene.',
+          'Sarrah Creation is a premier filmmaking, advertising, graphic design, and marketing production company founded by Sarika Mahesh Mene.',
         founder: {
           '@type': 'Person',
           '@id': `${siteUrl}/#founder`,
@@ -126,7 +126,7 @@ export default function RootLayout({ children }) {
         '@type': 'WebSite',
         '@id': `${siteUrl}/#website`,
         url: siteUrl,
-        name: 'Saraah Creation',
+        name: 'Sarrah Creation',
         publisher: {
           '@id': `${siteUrl}/#organization`,
         },

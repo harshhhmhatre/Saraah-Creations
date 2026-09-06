@@ -3,12 +3,12 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://saraahcreations.com
 export const metadata = {
   title: 'Our Work & Film Showcase | Aarti: The Unknown Love Story',
   description:
-    'Explore the cinematic portfolio of Saraah Creation. Featured project: "Aarti: The Unknown Love Story", an acclaimed Marathi feature film written, produced & directed by Sarika Mahesh Mene (IMDb 8.0/10).',
+    'Explore the cinematic portfolio of Sarrah Creation. Featured project: "Aarti: The Unknown Love Story", an acclaimed Marathi feature film written, produced & directed by Sarika Mahesh Mene (IMDb 8.0/10).',
   keywords: [
     'Aarti The Unknown Love Story',
     'Aarti Marathi Movie',
     'Sarika Mahesh Mene Director',
-    'Saraah Creation Portfolio',
+    'Sarrah Creation Portfolio',
     'Marathi Feature Film',
     'Sunny Pawar Aarti Makwana',
     'IMDb 8.0 Marathi Cinema',
@@ -18,9 +18,9 @@ export const metadata = {
     canonical: '/portfolio',
   },
   openGraph: {
-    title: 'Aarti: The Unknown Love Story | Saraah Creation Portfolio',
+    title: 'Aarti: The Unknown Love Story | Sarrah Creation Portfolio',
     description:
-      'Explore the cinematic journey of Saraah Creation. Directed by Sarika Mahesh Mene, rated 8.0/10 on IMDb.',
+      'Explore the cinematic journey of Sarrah Creation. Directed by Sarika Mahesh Mene, rated 8.0/10 on IMDb.',
     url: `${siteUrl}/portfolio`,
     type: 'video.movie',
     images: [
@@ -34,7 +34,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Aarti: The Unknown Love Story | Saraah Creation Portfolio',
+    title: 'Aarti: The Unknown Love Story | Sarrah Creation Portfolio',
     description:
       'Acclaimed Marathi feature film written, produced & directed by Sarika Mahesh Mene. IMDb 8.0/10.',
     images: ['/images/aarti-poster.png'],
@@ -60,7 +60,7 @@ export default function PortfolioLayout({ children }) {
         },
         productionCompany: {
           '@type': 'Organization',
-          name: 'Saraah Creation',
+          name: 'Sarrah Creation',
           url: siteUrl,
         },
         genre: ['Drama', 'Romance', 'Biography'],

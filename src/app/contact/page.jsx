@@ -68,7 +68,7 @@ export default function Contact() {
             <span className="gold-line-center"></span>
             <h1 className={`${styles.heroHeading} text-platinum-edge kinetic-hover`}>Let's Create Together</h1>
             <p className={styles.heroSub}>
-              Have a film concept, advertising campaign, brand identity, or sales strategy to discuss? Reach out to Saraah Creation today.
+              Have a film concept, advertising campaign, brand identity, or sales strategy to discuss? Reach out to Sarrah Creation today.
             </p>
           </ScrollReveal>
         </div>
@@ -211,14 +211,14 @@ export default function Contact() {
                     <div>
                       <div className={styles.infoTitle}>Studio Location</div>
                       <div className={styles.infoText}>
-                        Saraah Creation Studios,<br />
+                        Sarrah Creation Studios,<br />
                         Vile Parle, Mumbai, Maharashtra, India
                       </div>
                     </div>
                   </div>
 
                   <div style={{ borderTop: '1px solid rgba(122, 201, 67, 0.15)', paddingTop: '1.5rem', marginTop: '0.5rem' }}>
-                    <div className={styles.infoTitle} style={{ marginBottom: '0.75rem' }}>Follow Saraah Creation</div>
+                    <div className={styles.infoTitle} style={{ marginBottom: '0.75rem' }}>Follow Sarrah Creation</div>
                     <div style={{ display: 'flex', gap: '0.75rem' }}>
                       <a href="https://youtube.com/@sarikamenepresesnts-saraah818?si=zVgF96TWQ3QxIUbJ" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="YouTube"><Youtube size={18} /></a>
                       <a href="https://www.linkedin.com/in/sarikamene?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="LinkedIn"><Linkedin size={18} /></a>

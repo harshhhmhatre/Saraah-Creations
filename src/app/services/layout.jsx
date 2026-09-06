@@ -3,7 +3,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://saraahcreations.com
 export const metadata = {
   title: 'Services | Film Production, Advertising, Graphic Design & Marketing',
   description:
-    'Comprehensive creative solutions by Saraah Creation: Feature Films, TV Commercials, Corporate Films, Brand Identity, Graphic Design, Performance Marketing & Sales Strategy.',
+    'Comprehensive creative solutions by Sarrah Creation: Feature Films, TV Commercials, Corporate Films, Brand Identity, Graphic Design, Performance Marketing & Sales Strategy.',
   keywords: [
     'Film Production Services Mumbai',
     'TV Commercials Production India',
@@ -11,13 +11,13 @@ export const metadata = {
     'Brand Identity Design',
     'Sales Strategy & Marketing Agency',
     'Corporate Video Makers',
-    'Saraah Creation Services',
+    'Sarrah Creation Services',
   ],
   alternates: {
     canonical: '/services',
   },
   openGraph: {
-    title: 'Comprehensive Creative Services | Saraah Creation',
+    title: 'Comprehensive Creative Services | Sarrah Creation',
     description:
       'From script to silver screen, logo to full brand identity, strategy to revenue growth — explore our complete spectrum of creative services.',
     url: `${siteUrl}/services`,
@@ -26,15 +26,15 @@ export const metadata = {
         url: '/images/film-production.png',
         width: 800,
         height: 600,
-        alt: 'Saraah Creation Production and Creative Services',
+        alt: 'Sarrah Creation Production and Creative Services',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Comprehensive Creative Services | Saraah Creation',
+    title: 'Comprehensive Creative Services | Sarrah Creation',
     description:
-      'Film production, advertising, graphic design, and performance marketing by Saraah Creation.',
+      'Film production, advertising, graphic design, and performance marketing by Sarrah Creation.',
     images: ['/images/film-production.png'],
   },
 };
@@ -45,8 +45,8 @@ export default function ServicesLayout({ children }) {
     '@graph': [
       {
         '@type': 'ItemList',
-        name: 'Saraah Creation Core Services',
-        description: 'End-to-end creative and commercial services offered by Saraah Creation',
+        name: 'Sarrah Creation Core Services',
+        description: 'End-to-end creative and commercial services offered by Sarrah Creation',
         itemListElement: [
           {
             '@type': 'Service',
@@ -54,7 +54,7 @@ export default function ServicesLayout({ children }) {
             name: 'Film & Ad Production',
             provider: {
               '@type': 'Organization',
-              name: 'Saraah Creation',
+              name: 'Sarrah Creation',
             },
             serviceType: 'Film and Commercial Video Production',
             description: 'Feature films, TV commercials, OTT content, brand films, music videos, and post-production.',
@@ -65,7 +65,7 @@ export default function ServicesLayout({ children }) {
             name: 'Graphic Design & Branding',
             provider: {
               '@type': 'Organization',
-              name: 'Saraah Creation',
+              name: 'Sarrah Creation',
             },
             serviceType: 'Graphic Design and Brand Identity',
             description: 'Logo design, brand identity systems, marketing collateral, packaging, and UI/UX design.',
@@ -76,7 +76,7 @@ export default function ServicesLayout({ children }) {
             name: 'Sales & Marketing Strategy',
             provider: {
               '@type': 'Organization',
-              name: 'Saraah Creation',
+              name: 'Sarrah Creation',
             },
             serviceType: 'Marketing and Sales Strategy',
             description: 'Performance marketing, social media campaigns, GTM strategy, brand positioning, and conversion optimization.',

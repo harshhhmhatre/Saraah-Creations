@@ -31,9 +31,9 @@ export default function Footer() {
         {/* Brand Column */}
         <div className={styles.brandCol}>
           <Link href="/" className={styles.logo}>
-            <img src="/images/icon.png" alt="Saraah Creation Logo" className={styles.logoImage} />
+            <img src="/images/icon.png" alt="Sarrah Creation Logo" className={styles.logoImage} />
             <div className={styles.logoText}>
-              <span className={styles.logoMain}>SARAAH</span>
+              <span className={styles.logoMain}>Sarrah</span>
               <span className={styles.logoSub}>CREATIONS</span>
             </div>
           </Link>
@@ -92,10 +92,10 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className={styles.bottomBar}>
         <div className={`container ${styles.bottomContent}`}>
-          <p>© {new Date().getFullYear()} Saraah Creation. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Sarrah Creation. All rights reserved.</p>
           <div className={styles.bottomLinks}>
-            <Link href="#">Privacy Policy</Link>
-            <Link href="#">Terms of Service</Link>
+            <Link href="/privacy-policy">Privacy Policy</Link>
+            <Link href="/terms-of-service">Terms of Service</Link>
           </div>
         </div>
       </div>

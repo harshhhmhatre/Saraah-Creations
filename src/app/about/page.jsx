@@ -13,7 +13,7 @@ export default function About() {
         <div className="container">
           <ScrollReveal variant="fadeUp">
             <span className="gold-line-center"></span>
-            <h1 className={styles.heroHeading}>About Saraah Creation</h1>
+            <h1 className={styles.heroHeading}>About Sarrah Creation</h1>
             <p className={styles.heroSub}>
               A premium creative agency and production house uniting cinematic storytelling, design excellence, and business-focused marketing.
             </p>
@@ -33,10 +33,10 @@ export default function About() {
                   align="left"
                 />
                 <p>
-                  Saraah Creation was established with a single foundational vision: to create visual experiences that move people emotionally while driving measurable growth for brands and businesses.
+                  Sarrah Creation was established with a single foundational vision: to create visual experiences that move people emotionally while driving measurable growth for brands and businesses.
                 </p>
                 <p>
-                  Founded by <strong>Sarika Mahesh Mene</strong>, Saraah Creation breaks down traditional silos between filmmaking, graphic design, advertising, and strategic marketing. We operate as a single creative house capable of managing a project from raw imagination to high-impact execution.
+                  Founded by <strong>Sarika Mahesh Mene</strong>, Sarrah Creation breaks down traditional silos between filmmaking, graphic design, advertising, and strategic marketing. We operate as a single creative house capable of managing a project from raw imagination to high-impact execution.
                 </p>
               </div>
             </ScrollReveal>
@@ -45,7 +45,7 @@ export default function About() {
               <div style={{ position: 'relative', borderRadius: 'var(--radius-xl)', overflow: 'hidden', border: '2px solid var(--gold)', boxShadow: 'var(--shadow-xl)' }}>
                 <Image
                   src="/images/film-production.png"
-                  alt="Saraah Creation Film Production"
+                  alt="Sarrah Creation Film Production"
                   width={600}
                   height={450}
                   style={{ width: '100%', height: 'auto', display: 'block' }}

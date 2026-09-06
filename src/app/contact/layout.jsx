@@ -1,11 +1,11 @@
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://saraahcreations.com';
 
 export const metadata = {
-  title: 'Contact Us | Start a Project with Saraah Creation',
+  title: 'Contact Us | Start a Project with Sarrah Creation',
   description:
-    'Get in touch with Saraah Creation for film production, advertising campaigns, brand identity design, and marketing inquiries. Collaborate with Sarika Mahesh Mene and our creative team.',
+    'Get in touch with Sarrah Creation for film production, advertising campaigns, brand identity design, and marketing inquiries. Collaborate with Sarika Mahesh Mene and our creative team.',
   keywords: [
-    'Contact Saraah Creation',
+    'Contact Sarrah Creation',
     'Hire Film Production House Mumbai',
     'Advertising Agency Contact',
     'Sarika Mahesh Mene Contact',
@@ -16,24 +16,24 @@ export const metadata = {
     canonical: '/contact',
   },
   openGraph: {
-    title: 'Contact Saraah Creation | Let’s Create Cinema & Build Brands',
+    title: 'Contact Sarrah Creation | Let’s Create Cinema & Build Brands',
     description:
-      'Ready to bring your creative vision to life? Connect with Saraah Creation today.',
+      'Ready to bring your creative vision to life? Connect with Sarrah Creation today.',
     url: `${siteUrl}/contact`,
     images: [
       {
         url: '/images/abcd.png',
         width: 1200,
         height: 630,
-        alt: 'Contact Saraah Creation',
+        alt: 'Contact Sarrah Creation',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Contact Saraah Creation | Let’s Create Cinema & Build Brands',
+    title: 'Contact Sarrah Creation | Let’s Create Cinema & Build Brands',
     description:
-      'Ready to bring your creative vision to life? Connect with Saraah Creation today.',
+      'Ready to bring your creative vision to life? Connect with Sarrah Creation today.',
     images: ['/images/abcd.png'],
   },
 };
@@ -46,11 +46,11 @@ export default function ContactLayout({ children }) {
         '@type': 'ContactPage',
         '@id': `${siteUrl}/contact/#webpage`,
         url: `${siteUrl}/contact`,
-        name: 'Contact Saraah Creation',
-        description: 'Get in touch with Saraah Creation for film production, advertising, and marketing collaborations.',
+        name: 'Contact Sarrah Creation',
+        description: 'Get in touch with Sarrah Creation for film production, advertising, and marketing collaborations.',
         mainEntity: {
           '@type': 'Organization',
-          name: 'Saraah Creation',
+          name: 'Sarrah Creation',
           url: siteUrl,
           contactPoint: {
             '@type': 'ContactPoint',

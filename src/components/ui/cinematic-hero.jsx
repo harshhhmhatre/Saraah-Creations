@@ -116,11 +116,11 @@ const INJECTED_STYLES = `
 `;
 
 export function CinematicHero({ 
-  brandName = "SARAAH",
+  brandName = "Sarrah",
   tagline1 = "Stories That Move People,",
   tagline2 = "Ideas That Move Brands.",
   cardHeading = "Creating Cinema. Building Brands.",
-  cardDescription = "Saraah Creation is a filmmaking, advertising, graphic design, sales and marketing company founded by Sarika Mahesh Mene.",
+  cardDescription = "Sarrah Creation is a filmmaking, advertising, graphic design, sales and marketing company founded by Sarika Mahesh Mene.",
   metricValue = 8,
   metricLabel = "IMDb Rating",
   ctaHeading = "Start Your Production",
@@ -322,7 +322,7 @@ export function CinematicHero({
                       <div className="phone-widget flex justify-between items-center mb-4">
                         <div className="flex flex-col">
                           <span className="text-[10px] text-[#C8A74A] uppercase tracking-widest font-bold">PRODUCTION</span>
-                          <span className="text-lg font-bold tracking-tight text-white">Saraah Creation</span>
+                          <span className="text-lg font-bold tracking-tight text-white">Sarrah Creation</span>
                         </div>
                         <div className="w-8 h-8 rounded-full bg-[#7AC943]/20 text-[#7AC943] flex items-center justify-center font-bold text-xs border border-[#7AC943]/40">SC</div>
                       </div>

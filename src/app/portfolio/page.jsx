@@ -25,7 +25,7 @@ export default function Portfolio() {
               Our Work
             </h1>
             <p className={styles.heroSub}>
-              Every frame tells a story. Explore the cinematic journey of Saraah Creation.
+              Every frame tells a story. Explore the cinematic journey of Sarrah Creation.
             </p>
           </ScrollReveal>
         </div>

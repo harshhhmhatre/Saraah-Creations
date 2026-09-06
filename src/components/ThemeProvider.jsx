@@ -14,7 +14,7 @@ export function ThemeProvider({ children }) {
 
   useEffect(() => {
     setMounted(true);
-    const savedTheme = localStorage.getItem('saraah_theme');
+    const savedTheme = localStorage.getItem('sarrah_theme');
     if (savedTheme && ['dark', 'light'].includes(savedTheme)) {
       setThemeState(savedTheme);
       document.documentElement.setAttribute('data-theme', savedTheme);
@@ -26,7 +26,7 @@ export function ThemeProvider({ children }) {
   const setTheme = (newTheme) => {
     if (!['dark', 'light'].includes(newTheme)) return;
     setThemeState(newTheme);
-    localStorage.setItem('saraah_theme', newTheme);
+    localStorage.setItem('sarrah_theme', newTheme);
     document.documentElement.setAttribute('data-theme', newTheme);
   };
 

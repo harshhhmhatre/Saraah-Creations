@@ -31,7 +31,7 @@ export default function Home() {
         <div className={`container ${styles.heroContent}`}>
           <div className={styles.heroTextWrapper}>
             <h1 className={`${styles.heroHeading} kinetic-hover`}>
-              <span className="sr-only">Saraah Creation — Film Production, Advertising, Branding & Creative Agency</span>
+              <span className="sr-only">Sarrah Creation — Film Production, Advertising, Branding & Creative Agency</span>
               <SplitText
                 text="VISION."
                 tag="span"
@@ -166,7 +166,7 @@ export default function Home() {
                 "I'm a film director who believes in the power of storytelling. Every frame I create is driven by emotion, authenticity, and a deep curiosity about human nature."
               </p>
               <p className={styles.filmmakerDesc}>
-                <strong>Sarika Mahesh Mene</strong> is the Founder and Creative Director of Saraah Creation. With a passion for meaningful storytelling, she brings together filmmaking, advertising, graphics, sales and marketing under one creative platform.
+                <strong>Sarika Mahesh Mene</strong> is the Founder and Creative Director of Sarrah Creation. With a passion for meaningful storytelling, she brings together filmmaking, advertising, graphics, sales and marketing under one creative platform.
               </p>
               
               {/* Laurel Awards */}

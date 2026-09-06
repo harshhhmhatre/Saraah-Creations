@@ -4,7 +4,7 @@ export const filmData = {
   language: 'Marathi',
   director: 'Sarika Mahesh Mene',
   roles: ['Director', 'Writer / Screenplay', 'Producer'],
-  banner: 'Saraah Creation',
+  banner: 'Sarrah Creation',
   ratings: [
     { source: 'IMDb Audience Rating', rating: '8.0 / 10', votes: '26 ratings' },
     { source: 'BookMyShow Audience', rating: '7.8 / 10', votes: '5 votes' },
@@ -95,6 +95,6 @@ export const mediaInterviews = [
     id: 3,
     title: 'Official Trailer Launch — Aarti: The Unknown Love Story',
     type: 'Trailer Release',
-    description: 'Official trailer launch under the Saraah Creation banner.'
+    description: 'Official trailer launch under the Sarrah Creation banner.'
   }
 ];

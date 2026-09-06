@@ -15,7 +15,7 @@ export default function Press() {
             <span className="gold-line-center"></span>
             <h1 className={`${styles.heroHeading} kinetic-hover`}>Press & Media Reference</h1>
             <p className={styles.heroSub}>
-              Public coverage, critic reviews, film ratings, and national media coverage for Sarika Mahesh Mene and Saraah Creation's film productions.
+              Public coverage, critic reviews, film ratings, and national media coverage for Sarika Mahesh Mene and Sarrah Creation's film productions.
             </p>
           </ScrollReveal>
         </div>
@@ -68,7 +68,7 @@ export default function Press() {
                     Director, Writer & Producer: <strong>{filmData.director}</strong> • Banner: <strong>{filmData.banner}</strong>
                   </div>
                   <p className={styles.filmInspirationText}>
-                    {filmData.inspiration} Written, produced, and directed under the Saraah Creation banner, this emotionally powerful drama earned strong audience reviews for its heart-wrenching real life story and cinematography.
+                    {filmData.inspiration} Written, produced, and directed under the Sarrah Creation banner, this emotionally powerful drama earned strong audience reviews for its heart-wrenching real life story and cinematography.
                   </p>
 
                   <div className={styles.endorseList}>
@@ -136,7 +136,7 @@ export default function Press() {
             </h3>
             <div>
               <span className={styles.hashtagTag}>#AartiTheUnknownLoveStory</span>
-              <span className={styles.hashtagTag}>#SaraahCreation</span>
+              <span className={styles.hashtagTag}>#SarrahCreation</span>
               <span className={styles.hashtagTag}>#SarikaMene</span>
               <span className={styles.hashtagTag}>#SarikaMaheshMene</span>
             </div>

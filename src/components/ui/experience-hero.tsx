@@ -117,7 +117,7 @@ export const Component = () => {
              <div className="relative w-2.5 h-2.5 bg-[#7AC943] rounded-full">
                 <div className="absolute inset-0 bg-[#7AC943] rounded-full animate-ping opacity-30" />
              </div>
-             <span className="font-mono text-[11px] font-bold text-white tracking-[0.2em] uppercase">SARAAH CREATION</span>
+             <span className="font-mono text-[11px] font-bold text-white tracking-[0.2em] uppercase">Sarrah CREATION</span>
           </div>
 
           <div className="max-w-5xl lg:-translate-y-4 pr-6">
