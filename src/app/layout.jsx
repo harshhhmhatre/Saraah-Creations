@@ -5,6 +5,13 @@ import { ThemeProvider } from '@/components/ThemeProvider';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://saraahcreations.com';
 
+export const viewport = {
+  themeColor: '#0B2816',
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export const metadata = {
   metadataBase: new URL(siteUrl),
   title: {

@@ -138,3 +138,46 @@
 .subItem:active {
   transform: translateY(-1px);
 }
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 0 var(--space-10);
+  }
+
+  .heroHeading {
+    font-size: clamp(2rem, 7vw, 3.2rem);
+  }
+
+  .serviceBlock {
+    padding: var(--space-6) var(--space-4);
+    margin-bottom: var(--space-6);
+    border-radius: var(--radius-md);
+  }
+
+  .serviceHeader {
+    gap: var(--space-3);
+  }
+
+  .serviceIcon {
+    font-size: 2.2rem;
+  }
+
+  .serviceTitle {
+    font-size: clamp(1.4rem, 5.5vw, 2rem);
+  }
+
+  .serviceDesc {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-6);
+  }
+
+  .subGrid {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+
+  .subItem {
+    padding: var(--space-4);
+    font-size: 0.95rem;
+  }
+}

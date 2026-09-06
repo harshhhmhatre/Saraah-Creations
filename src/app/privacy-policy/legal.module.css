@@ -197,11 +197,24 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding: 100px 0 var(--space-10);
+  }
+
   .heroHeading {
-    font-size: var(--text-3xl);
+    font-size: clamp(1.8rem, 6.5vw, 2.6rem);
   }
 
   .legalContent {
-    padding: var(--space-10) var(--space-4);
+    padding: var(--space-8) 0;
+  }
+
+  .section h2 {
+    font-size: clamp(1.25rem, 5vw, 1.6rem);
+  }
+
+  .contactCard {
+    padding: 1.5rem 1rem;
+    border-radius: var(--radius-lg);
   }
 }

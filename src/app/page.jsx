@@ -74,9 +74,8 @@ export default function Home() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
-              style={{ marginTop: '5.5rem' }}
             >
-              <Button href="/portfolio" variant="primary" size="lg" icon style={{ padding: '1.25rem 3rem', fontSize: '1.05rem' }}>
+              <Button href="/portfolio" variant="primary" size="lg" icon className={styles.heroCtaBtn}>
                 VIEW OUR WORK
               </Button>
             </motion.div>

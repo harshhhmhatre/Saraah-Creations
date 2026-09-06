@@ -118,15 +118,7 @@
 @media (max-width: 992px) {
   .heroTextWrapper {
     margin-left: 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .heroTextWrapper {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    max-width: 100%;
   }
 }
 
@@ -308,6 +300,12 @@
   display: flex;
   align-items: center;
   gap: var(--space-6);
+  margin-top: 5rem;
+}
+
+.heroCtaBtn {
+  padding: 1.25rem 3rem !important;
+  font-size: 1.05rem !important;
 }
 
 .heroScrollIndicator {
@@ -1031,18 +1029,209 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    min-height: 100svh;
+    padding: 100px 0 var(--space-12);
+  }
+
   .heroHeading {
-    font-size: clamp(2.8rem, 10vw, 4rem);
+    font-size: clamp(2.3rem, 8.5vw, 3.8rem);
+    gap: 8px;
+    letter-spacing: 0.01em;
+  }
+
+  .heroButtons {
+    margin-top: 2rem;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .heroCtaBtn {
+    padding: 0.95rem 2rem !important;
+    font-size: 0.95rem !important;
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
+
+  /* Featured Showcase */
+  .featuredShowcase {
+    padding: var(--space-12) 0;
+  }
+
+  .featuredTitle {
+    font-size: clamp(1.8rem, 6.5vw, 2.6rem);
   }
 
   .ratingsRow {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     gap: var(--space-3);
+    width: 100%;
+    max-width: 380px;
+  }
+
+  .ratingChip {
+    flex: 1;
+    min-width: 0;
+    justify-content: center;
+    padding: var(--space-2) var(--space-3);
+  }
+
+  .ratingValue {
+    font-size: var(--text-xl);
   }
 
   .featuredCtas {
     flex-direction: column;
     align-items: stretch;
+    gap: var(--space-3);
+    width: 100%;
+    max-width: 380px;
+  }
+
+  .featuredCtas > * {
+    width: 100%;
+  }
+
+  /* Filmmaker Section */
+  .aboutFilmmakerSection {
+    padding: var(--space-12) 0;
+  }
+
+  .aboutFilmmakerGrid {
+    gap: var(--space-8);
+  }
+
+  .filmmakerQuote {
+    font-size: clamp(1.25rem, 4.5vw, 1.75rem);
+    line-height: 1.45;
+  }
+
+  .filmmakerDesc {
+    font-size: var(--text-base);
+    line-height: 1.75;
+  }
+
+  .filmmakerLaurels {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    width: 100%;
+    margin-bottom: var(--space-6);
+  }
+
+  .laurelCard {
+    min-width: 0;
+    max-width: 100%;
+    min-height: 170px;
+    padding: 0.85rem 0.35rem;
+    border-radius: var(--radius-lg);
+  }
+
+  .laurelIcon {
+    margin-bottom: 0.1rem;
+    width: 22px;
+    height: 22px;
+  }
+
+  .laurelCategory {
+    font-size: 0.52rem;
+    letter-spacing: 0.08em;
+    min-height: 1.5rem;
+  }
+
+  .laurelFest {
+    font-size: 0.76rem;
+    min-height: 2.2rem;
+    line-height: 1.2;
+  }
+
+  .laurelYear {
+    font-size: 0.62rem;
+    padding: 0.15rem 0.5rem;
+  }
+
+  /* Auditions Section */
+  .auditionsSection {
+    padding: var(--space-12) 0;
+  }
+
+  .auditionsBox {
+    padding: 2.25rem 1.25rem;
+    border-radius: 20px;
+  }
+
+  .auditionsTitle {
+    font-size: clamp(1.8rem, 6.5vw, 2.6rem);
+  }
+
+  .auditionsTitleAccent {
+    font-size: clamp(1.5rem, 5.5vw, 2.2rem);
+    margin-bottom: var(--space-4);
+  }
+
+  .auditionsSub {
+    font-size: var(--text-sm);
+    line-height: 1.7;
+  }
+
+  .auditionsDivider {
+    margin: var(--space-5) auto;
+  }
+
+  .auditionsDetails {
+    gap: 0.5rem;
+    margin-bottom: var(--space-6);
+  }
+
+  .auditionTag {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+    padding: 0.55rem 1rem;
+    font-size: 0.82rem;
+  }
+
+  .auditionsBtn {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+    padding: 0.85rem 1.75rem;
+    font-size: 0.88rem;
+  }
+
+  /* Quote Banner */
+  .quoteBanner {
+    padding: var(--space-12) 0;
+  }
+
+  .quoteText {
+    font-size: clamp(1.2rem, 4.8vw, 1.9rem);
+    padding: 0 var(--space-2);
+  }
+}
+
+@media (max-width: 480px) {
+  .filmmakerImageWrap {
+    max-width: 220px;
+  }
+
+  .laurelCard {
+    padding: 0.75rem 0.25rem;
+    min-height: 155px;
+  }
+
+  .laurelFest {
+    font-size: 0.7rem;
+  }
+
+  .laurelCategory {
+    font-size: 0.48rem;
+  }
+
+  .auditionsBox {
+    padding: 1.75rem 1rem;
   }
 }
 

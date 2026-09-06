@@ -81,7 +81,7 @@
   padding: var(--space-3) var(--space-4);
   border: 1px solid rgba(200, 167, 74, 0.2);
   border-radius: var(--radius-md);
-  font-size: var(--text-base);
+  font-size: 16px; /* Prevents iOS auto-zoom */
   color: #FDFCF8;
   transition: all var(--duration-fast) var(--ease-out);
   background: #2C332A;
@@ -224,7 +224,39 @@
 }
 
 @media (max-width: 900px) {
+  .hero {
+    padding: 100px 0 var(--space-10);
+  }
+
+  .heroHeading {
+    font-size: clamp(2rem, 7vw, 3.2rem);
+  }
+
   .contactGrid {
     grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .formCard,
+  .infoCard {
+    padding: var(--space-6) var(--space-5);
+    border-radius: var(--radius-xl);
+  }
+}
+
+@media (max-width: 480px) {
+  .formCard,
+  .infoCard {
+    padding: 1.25rem 1rem;
+  }
+
+  .infoItem {
+    padding: var(--space-3);
+    gap: var(--space-3);
+  }
+
+  .infoIcon {
+    width: 40px;
+    height: 40px;
   }
 }

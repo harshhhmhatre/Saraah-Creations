@@ -359,17 +359,73 @@
 }
 
 @media (max-width: 768px) {
-  .metaGrid {
-    grid-template-columns: 1fr;
-    gap: var(--space-3);
+  .hero {
+    padding: 100px 0 var(--space-10);
+  }
+
+  .heroHeading {
+    font-size: clamp(2.2rem, 7.5vw, 3.5rem);
+  }
+
+  .filmShowcase {
+    padding: var(--space-10) 0 var(--space-16);
+  }
+
+  .filmHeader {
+    margin-bottom: var(--space-10);
+  }
+
+  .filmTitle {
+    font-size: clamp(1.8rem, 6.5vw, 2.6rem);
   }
 
   .ratingsGrid {
     grid-template-columns: 1fr 1fr;
+    gap: var(--space-3);
+  }
+
+  .ratingCardGold,
+  .ratingCardGreen {
+    padding: var(--space-4) var(--space-2);
+  }
+
+  .ratingNumber {
+    font-size: var(--text-2xl);
+  }
+
+  .metaGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--space-2);
+  }
+
+  .metaValue {
+    font-size: 14px;
   }
 
   .detailCtas {
     flex-direction: column;
     align-items: stretch;
+    gap: var(--space-3);
+    width: 100%;
+  }
+
+  .detailCtas > * {
+    width: 100%;
+  }
+
+  .comingSoonCard {
+    padding: var(--space-8) var(--space-4);
+    border-radius: var(--radius-xl);
+  }
+
+  .comingSoonTitle {
+    font-size: clamp(1.5rem, 5.5vw, 2.2rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .metaGrid {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
   }
 }

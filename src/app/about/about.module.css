@@ -221,7 +221,36 @@
 }
 
 @media (max-width: 900px) {
+  .hero {
+    padding: 100px 0 var(--space-10);
+  }
+
+  .heroHeading {
+    font-size: clamp(2rem, 7vw, 3.2rem);
+  }
+
   .grid2 {
     grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .cardBox {
+    padding: var(--space-6);
+  }
+}
+
+@media (max-width: 480px) {
+  .valueGrid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .valueCard {
+    padding: var(--space-6) var(--space-4);
+  }
+
+  .storyContent p {
+    font-size: var(--text-base);
+    line-height: 1.75;
   }
 }
