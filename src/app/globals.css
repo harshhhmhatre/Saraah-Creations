@@ -587,7 +587,7 @@ input, textarea, select {
 
 /* --- Platinum Edge (elegant dark fade) --- */
 .text-platinum-edge {
-  background: linear-gradient(180deg, #1E1E1E 0%, #3F473E 60%, #1F2E1A 100%);
+  background: linear-gradient(180deg, #F5F0E8 0%, #C8A74A 50%, #E8E0D0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
