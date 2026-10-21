@@ -115,17 +115,36 @@ export default function Press() {
               align="center"
             />
             <div className={styles.articlesGrid}>
-              {mediaInterviews.map((item, idx) => (
-                <ScrollReveal key={item.id} variant="fadeUp" delay={idx * 0.1}>
-                  <div className={styles.articleCard} style={{ height: '100%' }}>
-                    <div>
-                      <div className={styles.articleOutlet}>{item.type}</div>
-                      <h4 className={styles.articleTitle}>{item.title}</h4>
-                      <p className={styles.articleExcerpt}>{item.description}</p>
-                    </div>
-                  </div>
-                </ScrollReveal>
-              ))}
+              {mediaInterviews.map((item, idx) => {
+                const CardTag = item.url ? 'a' : 'div';
+                return (
+                  <ScrollReveal key={item.id} variant="fadeUp" delay={idx * 0.1}>
+                    <CardTag
+                      {...(item.url
+                        ? {
+                            href: item.url,
+                            target: '_blank',
+                            rel: 'noopener noreferrer'
+                          }
+                        : {})}
+                      className={styles.articleCard}
+                      style={{
+                        height: '100%',
+                        textDecoration: 'none',
+                        color: 'inherit',
+                        cursor: item.url ? 'pointer' : 'default',
+                        display: 'flex'
+                      }}
+                    >
+                      <div>
+                        <div className={styles.articleOutlet}>{item.type}</div>
+                        <h4 className={styles.articleTitle}>{item.title}</h4>
+                        <p className={styles.articleExcerpt}>{item.description}</p>
+                      </div>
+                    </CardTag>
+                  </ScrollReveal>
+                );
+              })}
             </div>
           </div>
 

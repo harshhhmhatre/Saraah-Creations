@@ -95,6 +95,7 @@ export const mediaInterviews = [
     id: 3,
     title: 'Official Trailer Launch — Aarti: The Unknown Love Story',
     type: 'Trailer Release',
-    description: 'Official trailer launch under the Sarrah Creation banner.'
+    description: 'Official trailer launch under the Sarrah Creation banner.',
+    url: 'https://www.youtube.com/watch?v=7xEfcMbcNq0'
   }
 ];
