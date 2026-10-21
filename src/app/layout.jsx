@@ -2,6 +2,7 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { ThemeProvider } from '@/components/ThemeProvider';
+import IdleScrollbar from '@/components/IdleScrollbar';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://saraahcreations.com';
 
@@ -152,6 +153,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <ThemeProvider>
+          <IdleScrollbar />
           <Navbar />
           <main>{children}</main>
           <Footer />

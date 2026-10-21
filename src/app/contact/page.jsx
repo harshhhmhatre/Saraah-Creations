@@ -126,34 +126,19 @@ export default function Contact() {
                       </div>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                      <div className={styles.formGroup}>
-                        <label className={styles.formLabel}>Primary Service Needed</label>
-                        <select
-                          className={styles.select}
-                          value={formData.service}
-                          onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                        >
-                          <option value="Film Production">Film Production</option>
-                          <option value="Advertising">Advertising & Ad Films</option>
-                          <option value="Graphics & Branding">Graphics & Branding</option>
-                          <option value="Sales Solutions">Sales Solutions</option>
-                          <option value="Marketing Strategy">Marketing Strategy</option>
-                        </select>
-                      </div>
-
-                      <div className={styles.formGroup}>
-                        <label className={styles.formLabel}>Estimated Budget</label>
-                        <select
-                          className={styles.select}
-                          value={formData.budget}
-                          onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-                        >
-                          <option value="Standard">Standard Package</option>
-                          <option value="Premium">Premium Commercial</option>
-                          <option value="Enterprise">Full Creative Retainer</option>
-                        </select>
-                      </div>
+                    <div className={styles.formGroup}>
+                      <label className={styles.formLabel}>Primary Service Needed</label>
+                      <select
+                        className={styles.select}
+                        value={formData.service}
+                        onChange={(e) => setFormData({ ...formData, service: e.target.value })}
+                      >
+                        <option value="Film Production">Film Production</option>
+                        <option value="Advertising">Advertising & Ad Films</option>
+                        <option value="Graphics & Branding">Graphics & Branding</option>
+                        <option value="Sales Solutions">Sales Solutions</option>
+                        <option value="Marketing Strategy">Marketing Strategy</option>
+                      </select>
                     </div>
 
                     <div className={styles.formGroup}>

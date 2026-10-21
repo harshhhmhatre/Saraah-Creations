@@ -272,12 +272,25 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, var(--parrot-green-dark), var(--gold-dark));
+  background: linear-gradient(
+    180deg,
+    var(--scroll-thumb-start, var(--parrot-green-dark)),
+    var(--scroll-thumb-end, var(--gold-dark))
+  );
   border-radius: 3px;
+  box-shadow: 0 0 5px var(--scroll-thumb-glow, rgba(143, 194, 107, 0.15));
+  transition: background 0.4s ease, box-shadow 0.4s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--parrot-green);
+  box-shadow: 0 0 8px var(--parrot-green-glow);
+}
+
+/* Firefox Scrollbar */
+html {
+  scrollbar-color: var(--scroll-thumb-start, var(--parrot-green-dark)) var(--bg-main);
+  scrollbar-width: thin;
 }
 
 html {
