@@ -72,10 +72,10 @@ export const pressArticles = [
 export const mediaInterviews = [
   {
     id: 1,
-    title: 'Rajesh Mehta with Sarika Mene',
+    title: 'Alka Dhupkar with Sarika Mene',
     type: 'Video Interview',
-    description: 'In-depth direct video conversation with Sarika Mene discussing the making and vision behind Aarti.',
-    url: 'https://www.youtube.com/watch?v=DbCv_gJwTfc'
+    description: 'In-depth interview and conversation with prominent journalist Alka Dhupkar and filmmaker Sarika Mene.',
+    url: 'https://www.youtube.com/watch?v=grW-xi-9o9Y'
   },
   {
     id: 2,
