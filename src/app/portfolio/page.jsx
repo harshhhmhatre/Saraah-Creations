@@ -7,7 +7,7 @@ import { Star, Film, Award, Calendar, Globe, Clapperboard, Play } from 'lucide-r
 import ScrollReveal from '@/components/animations/ScrollReveal';
 import SplitText from '@/components/animations/SplitText';
 import Button from '@/components/ui/Button';
-import { projectsData } from '@/data/projects';
+import { projectsData, commercialAdsData } from '@/data/projects';
 import styles from './portfolio.module.css';
 
 const aarti = projectsData[0];
@@ -164,6 +164,61 @@ export default function Portfolio() {
                 </div>
               </div>
             </ScrollReveal>
+          </div>
+
+          {/* COMMERCIALS & BRAND CAMPAIGNS */}
+          <div className={styles.adsSection}>
+            <ScrollReveal variant="fadeUp">
+              <div className={styles.sectionHeaderWrap}>
+                <span className={`glass-badge ${styles.filmBadge}`}>TELEVISION & DIGITAL</span>
+                <h2 className={`${styles.sectionHeadingTitle} text-champagne-gold glow-text-gold`}>
+                  Commercials & Brand Campaigns
+                </h2>
+                <p className={styles.sectionHeadingSub}>
+                  Engaging television commercials and advertising films produced & directed under the Sarrah Creation banner.
+                </p>
+              </div>
+            </ScrollReveal>
+
+            <div className={styles.adsGrid}>
+              {commercialAdsData.map((ad, idx) => (
+                <ScrollReveal key={ad.id} variant="fadeUp" delay={idx * 0.15}>
+                  <a
+                    href={ad.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.adCard}
+                  >
+                    <div className={styles.adImageWrap}>
+                      <Image
+                        src={ad.image}
+                        alt={ad.title}
+                        width={480}
+                        height={360}
+                        className={styles.adImage}
+                        unoptimized
+                      />
+                      <div className={styles.adOverlay}>
+                        <div className={styles.adPlayBtn}>
+                          <Play size={22} fill="currentColor" />
+                        </div>
+                      </div>
+                      <span className={styles.adBadge}>{ad.tag}</span>
+                    </div>
+
+                    <div className={styles.adContent}>
+                      <div className={styles.adClient}>{ad.client} • <span className={styles.adStarring}>{ad.starring}</span></div>
+                      <h3 className={styles.adTitle}>{ad.title}</h3>
+                      <p className={styles.adDesc}>{ad.description}</p>
+                      <div className={styles.adWatchLink}>
+                        <span>Watch Commercial</span>
+                        <span className={styles.adArrow}>&rarr;</span>
+                      </div>
+                    </div>
+                  </a>
+                </ScrollReveal>
+              ))}
+            </div>
           </div>
 
           {/* Coming Soon */}
