@@ -258,7 +258,7 @@ export default function Home() {
 
                 <div className={styles.auditionsCtaWrap}>
                   <a
-                    href="https://forms.gle/xWzzjY1peo3Ua6oT8"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScQlRRG2TXSRNktvWEluIVmsAP_czDcwwCtEmBj7V2ty5BFcg/viewform?usp=dialog"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.auditionsBtn}
