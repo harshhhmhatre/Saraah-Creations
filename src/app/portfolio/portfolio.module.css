@@ -296,7 +296,7 @@
 }
 
 .milestoneIcon {
-  color: #C9A24B;
+  color: var(--gold);
   flex-shrink: 0;
   margin-top: 3px;
 }

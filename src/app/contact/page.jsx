@@ -116,7 +116,7 @@ function ContactContent() {
             {/* ENQUIRY FORM */}
             <ScrollReveal variant="slideLeft">
               <div className={styles.formCard} id="enquiry">
-                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-2xl)', marginBottom: '1.5rem', color: '#FDFCF8' }}>
+                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-2xl)', marginBottom: '1.5rem', color: 'var(--text-primary)' }}>
                   Project Enquiry
                 </h3>
 

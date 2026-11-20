@@ -1,32 +1,24 @@
 .navbar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: var(--z-sticky);
-  padding: var(--space-3) 0;
+  padding: var(--space-4) 0;
   transition: all var(--duration-normal) var(--ease-out);
-  background: var(--nav-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: transparent;
   border-bottom: 1px solid var(--border-subtle);
   overflow: visible;
 }
 
 .nonHomeNav {
-  background: var(--nav-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: transparent;
   border-bottom: 1px solid var(--border-subtle);
 }
 
 .scrolled {
-  background: var(--nav-bg);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--border-color);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  padding: var(--space-3) 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .navContent {
