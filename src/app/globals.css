@@ -64,8 +64,8 @@
 
   /* Text system */
   --text-primary: #F5F5F7;       /* Alabaster: High-contrast, clean readability */
-  --text-secondary: #9A9AA2;     /* Muted Silver: Dates, technical specs, metadata */
-  --text-muted: #6E6E78;
+  --text-secondary: #C8C8D0;     /* Crisp Silver: High legibility for body, specs, labels */
+  --text-muted: #9E9EA8;         /* Readable muted text & placeholders */
   --nav-bg: rgba(13, 13, 15, 0.92);
 
   /* Shadows & Ambient Glows */

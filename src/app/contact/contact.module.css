@@ -68,7 +68,7 @@
   font-family: var(--font-heading);
   font-size: var(--text-xs);
   font-weight: 700;
-  color: var(--text-secondary);
+  color: var(--gold-light);
   margin-bottom: var(--space-2);
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -79,7 +79,7 @@
 .textarea {
   width: 100%;
   padding: var(--space-3) var(--space-4);
-  border: 1px solid rgba(243, 229, 171, 0.2);
+  border: 1px solid rgba(243, 229, 171, 0.28);
   border-radius: var(--radius-md);
   font-size: 16px; /* Prevents iOS auto-zoom */
   color: var(--text-primary);
@@ -90,7 +90,7 @@
 
 .input::placeholder,
 .textarea::placeholder {
-  color: var(--text-muted);
+  color: rgba(245, 245, 247, 0.6);
 }
 
 .input:focus,
