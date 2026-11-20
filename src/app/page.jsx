@@ -158,8 +158,8 @@ export default function Home() {
               <Image
                 src="/images/founder-sarika.png"
                 alt="Sarika Mahesh Mene - Founder & Creative Director"
-                width={500}
-                height={650}
+                width={537}
+                height={808}
                 className={styles.filmmakerImg}
                 priority
               />
