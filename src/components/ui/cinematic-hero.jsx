@@ -32,17 +32,17 @@ const INJECTED_STYLES = `
   .text-3d-matte {
       color: #FFFFFF;
       text-shadow: 
-          0 10px 30px rgba(122, 201, 67, 0.2), 
+          0 10px 30px rgba(212, 175, 55, 0.2), 
           0 2px 4px rgba(0, 0, 0, 0.5);
   }
 
   .text-silver-matte {
-      background: linear-gradient(180deg, #7AC943 0%, #C8A74A 100%);
+      background: linear-gradient(180deg, #D4AF37 0%, #C8A74A 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
       transform: translateZ(0);
-      filter: drop-shadow(0px 10px 20px rgba(122, 201, 67, 0.3));
+      filter: drop-shadow(0px 10px 20px rgba(212, 175, 55, 0.3));
   }
 
   .text-card-silver-matte {
@@ -59,7 +59,7 @@ const INJECTED_STYLES = `
       background: linear-gradient(145deg, #1A1A1A 0%, #0A0A0A 100%);
       box-shadow: 
           0 40px 100px -20px rgba(0, 0, 0, 0.9),
-          0 20px 40px -20px rgba(122, 201, 67, 0.15),
+          0 20px 40px -20px rgba(212, 175, 55, 0.15),
           inset 0 1px 2px rgba(200, 167, 74, 0.3),
           inset 0 -2px 4px rgba(0, 0, 0, 0.8);
       border: 1px solid rgba(200, 167, 74, 0.2);
@@ -68,7 +68,7 @@ const INJECTED_STYLES = `
 
   .card-sheen {
       position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: 50;
-      background: radial-gradient(800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(122, 201, 67, 0.1) 0%, transparent 40%);
+      background: radial-gradient(800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(212, 175, 55, 0.1) 0%, transparent 40%);
       mix-blend-mode: screen; transition: opacity 0.3s ease;
   }
 
@@ -79,7 +79,7 @@ const INJECTED_STYLES = `
           inset 0 0 0 2px #C8A74A, 
           inset 0 0 0 7px #000, 
           0 40px 80px -15px rgba(0,0,0,0.9),
-          0 15px 25px -5px rgba(122, 201, 67, 0.3);
+          0 15px 25px -5px rgba(212, 175, 55, 0.3);
       transform-style: preserve-3d;
   }
 
@@ -265,7 +265,7 @@ export function CinematicHero({
         <div className="flex flex-col sm:flex-row gap-6">
           <a
             href="/contact"
-            className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full font-bold text-white bg-[#7AC943] hover:bg-[#5FA832] transition-all shadow-lg shadow-[#7AC943]/30"
+            className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full font-bold text-white bg-[#D4AF37] hover:bg-[#AA820A] transition-all shadow-lg shadow-[#D4AF37]/30"
           >
             Start a Project
           </a>
@@ -314,7 +314,7 @@ export function CinematicHero({
 
                     {/* Notch */}
                     <div className="absolute top-[5px] left-1/2 -translate-x-1/2 w-[100px] h-[28px] bg-black rounded-full z-50 flex items-center justify-end px-3 shadow-[inset_0_-1px_2px_rgba(255,255,255,0.1)]">
-                      <div className="w-1.5 h-1.5 rounded-full bg-[#7AC943] shadow-[0_0_8px_rgba(122,201,67,0.8)] animate-pulse" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#D4AF37] shadow-[0_0_8px_rgba(212, 175, 55,0.8)] animate-pulse" />
                     </div>
 
                     {/* Interface */}
@@ -324,13 +324,13 @@ export function CinematicHero({
                           <span className="text-[10px] text-[#C8A74A] uppercase tracking-widest font-bold">PRODUCTION</span>
                           <span className="text-lg font-bold tracking-tight text-white">Sarrah Creation</span>
                         </div>
-                        <div className="w-8 h-8 rounded-full bg-[#7AC943]/20 text-[#7AC943] flex items-center justify-center font-bold text-xs border border-[#7AC943]/40">SC</div>
+                        <div className="w-8 h-8 rounded-full bg-[#D4AF37]/20 text-[#D4AF37] flex items-center justify-center font-bold text-xs border border-[#D4AF37]/40">SC</div>
                       </div>
 
                       <div className="phone-widget relative w-40 h-40 mx-auto flex items-center justify-center drop-shadow-[0_15px_25px_rgba(0,0,0,0.8)]">
                         <svg className="absolute inset-0 w-full h-full" aria-hidden="true">
                           <circle cx="80" cy="80" r="58" fill="none" stroke="rgba(255,255,255,0.05)" strokeWidth="10" />
-                          <circle className="progress-ring" cx="80" cy="80" r="58" fill="none" stroke="#7AC943" strokeWidth="10" />
+                          <circle className="progress-ring" cx="80" cy="80" r="58" fill="none" stroke="#D4AF37" strokeWidth="10" />
                         </svg>
                         <div className="text-center z-10 flex flex-col items-center">
                           <span className="counter-val text-4xl font-extrabold tracking-tighter text-[#C8A74A]">0</span>
@@ -340,7 +340,7 @@ export function CinematicHero({
 
                       <div className="space-y-2">
                         <div className="phone-widget widget-depth rounded-xl p-2.5 flex items-center">
-                          <div className="w-8 h-8 rounded-lg bg-[#7AC943]/20 flex items-center justify-center mr-2.5 border border-[#7AC943]/30">
+                          <div className="w-8 h-8 rounded-lg bg-[#D4AF37]/20 flex items-center justify-center mr-2.5 border border-[#D4AF37]/30">
                             <span className="text-sm">🎬</span>
                           </div>
                           <div className="flex-1">
@@ -355,7 +355,7 @@ export function CinematicHero({
 
                 {/* Floating Glass Badges */}
                 <div className="floating-badge absolute flex top-6 lg:top-12 left-[-15px] lg:left-[-80px] floating-ui-badge rounded-xl lg:rounded-2xl p-3 lg:p-4 items-center gap-3 lg:gap-4 z-30">
-                  <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-[#7AC943]/20 flex items-center justify-center border border-[#7AC943]/40">
+                  <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-[#D4AF37]/20 flex items-center justify-center border border-[#D4AF37]/40">
                     <span className="text-base lg:text-xl">🏆</span>
                   </div>
                   <div>

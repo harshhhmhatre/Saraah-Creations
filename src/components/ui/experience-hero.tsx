@@ -114,8 +114,8 @@ export const Component = () => {
       <div ref={revealRef} className="relative z-10 w-full flex flex-col md:flex-row p-8 md:p-14 lg:p-20 min-h-screen items-center md:items-stretch gap-10">
         <div className="flex-1 min-w-0 flex flex-col justify-between pb-12 md:pb-8 w-full">
           <div className="flex items-center gap-3">
-             <div className="relative w-2.5 h-2.5 bg-[#7AC943] rounded-full">
-                <div className="absolute inset-0 bg-[#7AC943] rounded-full animate-ping opacity-30" />
+             <div className="relative w-2.5 h-2.5 bg-[#D4AF37] rounded-full">
+                <div className="absolute inset-0 bg-[#D4AF37] rounded-full animate-ping opacity-30" />
              </div>
              <span className="font-mono text-[11px] font-bold text-white tracking-[0.2em] uppercase">Sarrah CREATION</span>
           </div>
@@ -134,7 +134,7 @@ export const Component = () => {
           
           <a href="/contact">
             <button ref={ctaRef} className="w-fit flex items-center gap-6 group lg:-translate-y-8">
-               <div className="w-14 h-14 rounded-full border border-white/15 flex items-center justify-center group-hover:bg-[#7AC943] group-hover:border-[#7AC943] transition-all duration-500 overflow-hidden">
+               <div className="w-14 h-14 rounded-full border border-white/15 flex items-center justify-center group-hover:bg-[#D4AF37] group-hover:border-[#D4AF37] transition-all duration-500 overflow-hidden">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="group-hover:stroke-black stroke-white transition-colors duration-500">
                     <path d="M7 17L17 7M17 7H8M17 7V16" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
@@ -152,12 +152,12 @@ export const Component = () => {
             { id: "003", title: "CREATIVE HOUSE", val: "5 Core Pillars", type: "text" }
           ].map((item) => (
             <div key={item.id} className="command-cell glass-panel p-6 sm:p-7 block opacity-1">
-              <span className="font-mono text-[9px] text-[#7AC943] uppercase tracking-widest block mb-3">{item.id} // {item.title}</span>
+              <span className="font-mono text-[9px] text-[#D4AF37] uppercase tracking-widest block mb-3">{item.id} // {item.title}</span>
               {item.type === "progress" ? (
                 <div className="flex justify-between items-end mt-2">
                   <h4 className="text-2xl sm:text-3xl font-bold text-white tracking-tighter">{item.val}</h4>
                   <div className="h-[2px] w-20 bg-white/5 rounded-full overflow-hidden">
-                     <div className="h-full bg-[#7AC943] w-[75%] animate-loading" />
+                     <div className="h-full bg-[#D4AF37] w-[75%] animate-loading" />
                   </div>
                 </div>
               ) : item.type === "data" ? (
@@ -169,7 +169,7 @@ export const Component = () => {
                   <div className="h-[1px] w-full bg-white/10" />
                   <div className="flex justify-between text-[10px] font-mono text-white/50">
                     <span>BookMyShow Rating</span>
-                    <span className="text-[#7AC943] font-bold">7.8 / 10</span>
+                    <span className="text-[#D4AF37] font-bold">7.8 / 10</span>
                   </div>
                 </div>
               ) : (

@@ -20,7 +20,7 @@
   transform: translateX(-50%);
   width: 900px;
   height: 500px;
-  background: radial-gradient(ellipse at top center, rgba(122, 201, 67, 0.07) 0%, transparent 65%);
+  background: radial-gradient(ellipse at top center, rgba(212, 175, 55, 0.08) 0%, transparent 65%);
   pointer-events: none;
 }
 
@@ -71,12 +71,12 @@
 
 .serviceIcon {
   font-size: 3rem;
-  filter: drop-shadow(0 0 12px rgba(122, 201, 67, 0.4));
+  filter: drop-shadow(0 0 12px rgba(212, 175, 55, 0.4));
   transition: filter var(--duration-normal) var(--ease-out);
 }
 
 .serviceBlock:hover .serviceIcon {
-  filter: drop-shadow(0 0 20px rgba(122, 201, 67, 0.6));
+  filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.6));
 }
 
 .serviceTitle {
@@ -93,7 +93,7 @@
 }
 
 .serviceTitleLink:hover .serviceTitle {
-  color: var(--parrot-green);
+  color: var(--gold);
 }
 
 .serviceDesc {
@@ -106,18 +106,19 @@
 
 .subGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: var(--space-4);
+  align-items: stretch;
 }
 
 .subItem {
   background: var(--bg-card);
-  padding: var(--space-5) var(--space-6);
+  padding: 14px var(--space-5);
   border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
-  border-left: 4px solid var(--parrot-green);
+  border-left: 4px solid var(--gold);
   font-weight: 500;
-  font-size: 1.05rem;
+  font-size: 0.98rem;
   color: var(--text-primary);
   text-decoration: none;
   transition: all var(--duration-normal) var(--ease-out);
@@ -127,14 +128,24 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  min-height: 72px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.subText {
+  flex: 1;
+  line-height: 1.35;
+  display: block;
 }
 
 .subItem::before {
   content: '✓';
-  color: var(--parrot-green);
+  color: var(--gold);
   margin-right: var(--space-4);
   font-weight: 800;
   font-size: 1.2rem;
+  flex-shrink: 0;
 }
 
 .subItem::after {
@@ -145,6 +156,8 @@
   transition: all var(--duration-fast) var(--ease-out);
   color: var(--gold);
   font-weight: 700;
+  flex-shrink: 0;
+  padding-left: var(--space-2);
 }
 
 .subItem:hover {
@@ -180,20 +193,20 @@
   font-family: var(--font-heading);
   font-size: var(--text-sm);
   font-weight: 600;
-  color: var(--parrot-green);
-  border: 1px solid rgba(122, 201, 67, 0.35);
+  color: var(--gold);
+  border: 1px solid rgba(212, 175, 55, 0.35);
   border-radius: var(--radius-full);
-  background: rgba(122, 201, 67, 0.06);
+  background: rgba(212, 175, 55, 0.08);
   text-decoration: none;
   transition: all var(--duration-fast) var(--ease-out);
 }
 
 .serviceEnquireBtn:hover {
-  background: var(--parrot-green);
-  color: #030604;
-  border-color: var(--parrot-green);
+  background: var(--gold);
+  color: #0D0D0F;
+  border-color: var(--gold);
   transform: translateX(4px);
-  box-shadow: 0 4px 15px rgba(122, 201, 67, 0.25);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
 }
 
 @media (max-width: 768px) {
@@ -236,5 +249,6 @@
   .subItem {
     padding: var(--space-4);
     font-size: 0.95rem;
+    min-height: 56px;
   }
 }

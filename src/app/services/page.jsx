@@ -48,7 +48,7 @@ export default function Services() {
                       href={`/contact?service=${encodeURIComponent(sub)}#enquiry`}
                       className={styles.subItem}
                     >
-                      <span>{sub}</span>
+                      <span className={styles.subText}>{sub}</span>
                     </Link>
                   ))}
                 </div>

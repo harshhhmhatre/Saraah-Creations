@@ -33,26 +33,26 @@ export default function IdleScrollbar() {
       // Smooth sinusoidal oscillation (-1 to 1)
       const sin = Math.sin(progressRef.current * Math.PI * 2);
 
-      // Top color: Subtle drift in the signature emerald / forest green spectrum
-      // Center hue ~110° (emerald), shifting gently between ~98° (rich olive-forest) and ~122° (radiant emerald)
-      const hue1 = (110 + sin * 12).toFixed(1);
-      const sat1 = (54 + sin * 6).toFixed(1);
-      const light1 = (38 + sin * 4).toFixed(1);
+      // Top color: Subtle drift in the Marquee Gold spectrum (Classic Cinema & Editorial Gold)
+      // Center hue ~45° (Marquee Gold #D4AF37), shifting gently between ~42° (Antique Gold) and ~48° (Champagne Mist)
+      const hue1 = (45 + sin * 3).toFixed(1);
+      const sat1 = (65 + sin * 5).toFixed(1);
+      const light1 = (48 + sin * 4).toFixed(1);
 
-      // Bottom color: Subtle drift in the signature luxury gold / bronze spectrum
-      // Center hue ~44° (amber gold), shifting gently between ~38° (warm bronze) and ~50° (luminous champagne gold)
-      const hue2 = (44 + sin * 6).toFixed(1);
-      const sat2 = (68 + sin * 6).toFixed(1);
-      const light2 = (42 + sin * 5).toFixed(1);
+      // Bottom color: Subtle drift in the warm antique gold spectrum
+      // Center hue ~42° (Deep Gold), shifting gently between ~40° and ~45°
+      const hue2 = (42 + sin * 3).toFixed(1);
+      const sat2 = (70 + sin * 5).toFixed(1);
+      const light2 = (36 + sin * 4).toFixed(1);
 
-      // Subtle ambient glow
-      const glowAlpha = (0.15 + (sin + 1) * 0.08).toFixed(2);
+      // Subtle ambient gold glow
+      const glowAlpha = (0.2 + (sin + 1) * 0.08).toFixed(2);
 
       root.style.setProperty('--scroll-thumb-start', `hsl(${hue1}, ${sat1}%, ${light1}%)`);
       root.style.setProperty('--scroll-thumb-end', `hsl(${hue2}, ${sat2}%, ${light2}%)`);
       root.style.setProperty(
         '--scroll-thumb-glow',
-        `hsla(${hue1}, 65%, 45%, ${glowAlpha})`
+        `hsla(45, 75%, 50%, ${glowAlpha})`
       );
 
       animFrameRef.current = requestAnimationFrame(updateLoop);

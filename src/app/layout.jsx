@@ -7,7 +7,7 @@ import IdleScrollbar from '@/components/IdleScrollbar';
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://saraahcreations.com';
 
 export const viewport = {
-  themeColor: '#0B2816',
+  themeColor: '#0D0D0F',
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,

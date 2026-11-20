@@ -137,9 +137,9 @@
 }
 
 .socialIcon:hover {
-  color: var(--parrot-green);
+  color: var(--gold);
   transform: translateY(-2px);
-  filter: drop-shadow(0 0 8px rgba(122, 201, 67, 0.4));
+  filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.4));
 }
 
 /* Mobile Toggle */
@@ -176,7 +176,7 @@
   height: 100%;
   max-height: 100dvh;
   background: var(--bg-alt);
-  border-left: 1px solid rgba(122, 201, 67, 0.2);
+  border-left: 1px solid rgba(212, 175, 55, 0.2);
   display: flex;
   flex-direction: column;
   justify-content: space-between;

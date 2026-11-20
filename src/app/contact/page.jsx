@@ -244,7 +244,7 @@ function ContactContent() {
                     </div>
                   </div>
 
-                  <div style={{ borderTop: '1px solid rgba(122, 201, 67, 0.15)', paddingTop: '1.5rem', marginTop: '0.5rem' }}>
+                  <div style={{ borderTop: '1px solid rgba(212, 175, 55, 0.2)', paddingTop: '1.5rem', marginTop: '0.5rem' }}>
                     <div className={styles.infoTitle} style={{ marginBottom: '0.75rem' }}>Follow Sarrah Creation</div>
                     <div style={{ display: 'flex', gap: '0.75rem' }}>
                       <a href="https://youtube.com/@sarikamenepresesnts-saraah818?si=zVgF96TWQ3QxIUbJ" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="YouTube"><Youtube size={18} /></a>

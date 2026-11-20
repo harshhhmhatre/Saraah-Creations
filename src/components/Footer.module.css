@@ -107,11 +107,11 @@
 }
 
 .socialIcon:hover {
-  color: var(--black);
-  border-color: var(--parrot-green);
-  background: var(--parrot-green);
+  color: #0D0D0F;
+  border-color: var(--gold);
+  background: var(--gold);
   transform: translateY(-2px);
-  box-shadow: 0 0 16px rgba(122, 201, 67, 0.4);
+  box-shadow: 0 0 16px rgba(212, 175, 55, 0.4);
 }
 
 /* Links Columns */
