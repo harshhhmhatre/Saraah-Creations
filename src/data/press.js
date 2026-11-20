@@ -29,7 +29,7 @@ export const pressArticles = [
     excerpt: 'Direct interview with filmmaker Sarika Mahesh Mene discussing the film\'s basis in her brother Sunny Pawar\'s real life.',
     category: 'Interview & Dispute Coverage',
     date: '2018',
-    url: '#'
+    url: 'https://www.hindustantimes.com/bollywood/october-is-way-too-similar-to-my-film-says-sarika-mahesh-mene-maker-of-aarti-the-unknown-love-story/story-9GOH214UGxy53fXoEopxZO.html'
   },
   {
     id: 2,
@@ -38,43 +38,34 @@ export const pressArticles = [
     excerpt: 'Details the registration of Aarti: The Unknown Love Story and legal steps taken regarding story rights.',
     category: 'Legal Notice & Industry Coverage',
     date: '2018',
-    url: '#'
+    url: 'https://scroll.in/reel/876190/varun-dhawan-starrer-october-is-plagiarised-from-my-movie-marathi-director-claims'
   },
   {
     id: 3,
-    outlet: 'Mid-Day',
+    outlet: 'The Hindu',
     title: 'Director sues October team for plagiarism; seeks life rights credit',
     excerpt: 'Covers the family\'s request for official acknowledgment of Sunny Pawar\'s inspiring life story.',
     category: 'Press Report',
     date: '2018',
-    url: '#'
+    url: 'https://www.thehindu.com/news/cities/mumbai/no-plagiarism-but-life-rights-debate-haunts-october/article23907036.ece'
   },
   {
     id: 4,
-    outlet: 'Filmfare',
-    title: 'Marathi film director Sarika Mene claims October is inspired by her film Aarti',
-    excerpt: 'National entertainment magazine report highlighting Sarika Mene\'s 2017 debut feature release.',
-    category: 'Feature & News',
+    outlet: 'Times Now',
+    title: 'EXCLUSIVE | “I am shocked Shoojit Sircar did this,” says Marathi director Sarika Mene on plagiarism claims',
+    excerpt: 'Exclusive interview with filmmaker Sarika Mene addressing the creative parallels between October and Aarti: The Unknown Love Story.',
+    category: 'Exclusive Interview',
     date: '2018',
-    url: '#'
+    url: 'https://www.timesnownews.com/entertainment/news/bollywood-news/article/exclusive-i-am-shocked-shoojit-sircar-did-this-says-marathi-director-sarika-mene-on-plagiarism-claims/219480'
   },
   {
     id: 5,
-    outlet: 'The Quint',
-    title: 'Screenwriters Association (SWA) proceedings on Aarti life rights',
-    excerpt: 'Analysis of life rights, script registration, and writers body observations.',
-    category: 'Industry Analysis',
-    date: '2018',
-    url: '#'
-  },
-  {
-    id: 6,
     outlet: 'MarathiMovieWorld',
     title: 'Grand Poster Launch of Aarti: The Unknown Love Story',
     excerpt: 'Poster launched by Shri Manohar Joshi with blessings from veteran actress Waheeda Rehman.',
     category: 'Release & Event Coverage',
     date: '2017',
-    url: '#'
+    url: 'https://www.marathimovieworld.com/news/poster-launched-of-new-marathi-film-aarti.php'
   }
 ];
 
@@ -83,13 +74,15 @@ export const mediaInterviews = [
     id: 1,
     title: 'Rajesh Mehta with Sarika Mene',
     type: 'Video Interview',
-    description: 'In-depth direct video conversation with Sarika Mene discussing the making and vision behind Aarti.'
+    description: 'In-depth direct video conversation with Sarika Mene discussing the making and vision behind Aarti.',
+    url: 'https://www.youtube.com/watch?v=DbCv_gJwTfc'
   },
   {
     id: 2,
-    title: 'ItsMajja Marathi Video Special',
-    type: 'Regional Broadcast',
-    description: 'Special Marathi entertainment feature highlighting Sarika Mahesh Mene as a director.'
+    title: 'Sarika Mene interview with Yogesh Mishra | October | Talk Show | Bollywood town',
+    type: 'Talk Show',
+    description: 'In-depth interview on Bollywood Town with Yogesh Mishra discussing the film October and Aarti.',
+    url: 'https://www.youtube.com/watch?v=uVaaTABMcaU'
   },
   {
     id: 3,
@@ -97,5 +90,12 @@ export const mediaInterviews = [
     type: 'Trailer Release',
     description: 'Official trailer launch under the Sarrah Creation banner.',
     url: 'https://www.youtube.com/watch?v=7xEfcMbcNq0'
+  },
+  {
+    id: 4,
+    title: "Marathi Film Director Sarika Mene Accuses Makers Of 'October' For Copying Her Film | ABP News",
+    type: 'News Broadcast',
+    description: 'National television coverage on ABP News with director Sarika Mene speaking on the controversy surrounding October and Aarti.',
+    url: 'https://www.youtube.com/watch?v=iiC8WTl_0C0&t=180s'
   }
 ];

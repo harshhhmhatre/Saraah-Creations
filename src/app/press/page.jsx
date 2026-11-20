@@ -93,18 +93,37 @@ export default function Press() {
           />
 
           <div className={styles.articlesGrid}>
-            {pressArticles.map((article, index) => (
-              <ScrollReveal key={article.id} variant="fadeUp" delay={index * 0.1}>
-                <div className={styles.articleCard}>
-                  <div>
-                    <div className={styles.articleOutlet}>{article.outlet}</div>
-                    <h3 className={styles.articleTitle}>{article.title}</h3>
-                    <p className={styles.articleExcerpt}>{article.excerpt}</p>
-                  </div>
-                  <div className={styles.articleCategory}>{article.category} • {article.date}</div>
-                </div>
-              </ScrollReveal>
-            ))}
+            {pressArticles.map((article, index) => {
+              const hasUrl = article.url && article.url !== '#';
+              const CardTag = hasUrl ? 'a' : 'div';
+              return (
+                <ScrollReveal key={article.id} variant="fadeUp" delay={index * 0.1}>
+                  <CardTag
+                    {...(hasUrl
+                      ? {
+                          href: article.url,
+                          target: '_blank',
+                          rel: 'noopener noreferrer'
+                        }
+                      : {})}
+                    className={styles.articleCard}
+                    style={{
+                      height: '100%',
+                      textDecoration: 'none',
+                      color: 'inherit',
+                      cursor: hasUrl ? 'pointer' : 'default'
+                    }}
+                  >
+                    <div>
+                      <div className={styles.articleOutlet}>{article.outlet}</div>
+                      <h3 className={styles.articleTitle}>{article.title}</h3>
+                      <p className={styles.articleExcerpt}>{article.excerpt}</p>
+                    </div>
+                    <div className={styles.articleCategory}>{article.category} • {article.date}</div>
+                  </CardTag>
+                </ScrollReveal>
+              );
+            })}
           </div>
 
           {/* VIDEO & TV INTERVIEWS */}

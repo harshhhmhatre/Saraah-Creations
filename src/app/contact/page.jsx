@@ -1,15 +1,20 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, Suspense } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
-import { Youtube, Linkedin } from '@/components/ui/SocialIcons';
+import { Youtube, Linkedin, Instagram } from '@/components/ui/SocialIcons';
 import SectionHeading from '@/components/ui/SectionHeading';
 import ScrollReveal from '@/components/animations/ScrollReveal';
 import Button from '@/components/ui/Button';
 import { Card3D } from '@/components/ui/3d-card';
+import { servicesData } from '@/data/services';
 import styles from './contact.module.css';
 
-export default function Contact() {
+function ContactContent() {
+  const searchParams = useSearchParams();
+  const serviceParam = searchParams.get('service');
+
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [formData, setFormData] = useState({
@@ -20,6 +25,37 @@ export default function Contact() {
     budget: 'Standard',
     message: ''
   });
+
+  useEffect(() => {
+    if (serviceParam) {
+      // Find case-insensitive match among services & subcategories
+      let matched = '';
+      for (const s of servicesData) {
+        if (s.title.toLowerCase() === serviceParam.toLowerCase()) {
+          matched = s.title;
+          break;
+        }
+        for (const sub of s.subCategories) {
+          if (sub.toLowerCase() === serviceParam.toLowerCase()) {
+            matched = sub;
+            break;
+          }
+        }
+        if (matched) break;
+      }
+
+      const selectedValue = matched || serviceParam;
+      setFormData((prev) => ({ ...prev, service: selectedValue }));
+
+      // Smooth scroll to the enquiry form
+      const el = document.getElementById('enquiry');
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 150);
+      }
+    }
+  }, [serviceParam]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -79,7 +115,7 @@ export default function Contact() {
           <div className={styles.contactGrid}>
             {/* ENQUIRY FORM */}
             <ScrollReveal variant="slideLeft">
-              <div className={styles.formCard}>
+              <div className={styles.formCard} id="enquiry">
                 <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-2xl)', marginBottom: '1.5rem', color: '#FDFCF8' }}>
                   Project Enquiry
                 </h3>
@@ -133,11 +169,17 @@ export default function Contact() {
                         value={formData.service}
                         onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                       >
-                        <option value="Film Production">Film Production</option>
-                        <option value="Advertising">Advertising & Ad Films</option>
-                        <option value="Graphics & Branding">Graphics & Branding</option>
-                        <option value="Sales Solutions">Sales Solutions</option>
-                        <option value="Marketing Strategy">Marketing Strategy</option>
+                        {servicesData.map((s) => (
+                          <optgroup key={s.id} label={s.title}>
+                            <option value={s.title}>{s.title} (General)</option>
+                            {s.subCategories.map((sub) => (
+                              <option key={sub} value={sub}>
+                                {sub}
+                              </option>
+                            ))}
+                          </optgroup>
+                        ))}
+                        <option value="Other">Other / Custom Enquiry</option>
                       </select>
                     </div>
 
@@ -206,6 +248,7 @@ export default function Contact() {
                     <div className={styles.infoTitle} style={{ marginBottom: '0.75rem' }}>Follow Sarrah Creation</div>
                     <div style={{ display: 'flex', gap: '0.75rem' }}>
                       <a href="https://youtube.com/@sarikamenepresesnts-saraah818?si=zVgF96TWQ3QxIUbJ" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="YouTube"><Youtube size={18} /></a>
+                      <a href="https://www.instagram.com/ssarrikamene/" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="Instagram"><Instagram size={18} /></a>
                       <a href="https://www.linkedin.com/in/sarikamene?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="LinkedIn"><Linkedin size={18} /></a>
                     </div>
                   </div>
@@ -216,5 +259,13 @@ export default function Contact() {
         </div>
       </section>
     </>
+  );
+}
+
+export default function Contact() {
+  return (
+    <Suspense fallback={null}>
+      <ContactContent />
+    </Suspense>
   );
 }

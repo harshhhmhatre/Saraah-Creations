@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Play, Mail, Phone, MapPin } from 'lucide-react';
-import { Youtube, Linkedin } from '@/components/ui/SocialIcons';
+import { Youtube, Linkedin, Instagram } from '@/components/ui/SocialIcons';
 import styles from './Footer.module.css';
 
 const quickLinks = [
@@ -43,6 +43,7 @@ export default function Footer() {
           <p className={styles.founded}>Founded by <strong>Sarika Mahesh Mene</strong></p>
           <div className={styles.socials}>
             <a href="https://youtube.com/@sarikamenepresesnts-saraah818?si=zVgF96TWQ3QxIUbJ" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className={styles.socialIcon}><Youtube size={18} /></a>
+            <a href="https://www.instagram.com/ssarrikamene/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className={styles.socialIcon}><Instagram size={18} /></a>
             <a href="https://www.linkedin.com/in/sarikamene?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className={styles.socialIcon}><Linkedin size={18} /></a>
           </div>
         </div>

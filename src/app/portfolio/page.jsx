@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Star, Film, Award, Calendar, Globe, Clapperboard } from 'lucide-react';
+import { Star, Film, Award, Calendar, Globe, Clapperboard, Play } from 'lucide-react';
 import ScrollReveal from '@/components/animations/ScrollReveal';
 import SplitText from '@/components/animations/SplitText';
 import Button from '@/components/ui/Button';
@@ -38,9 +38,11 @@ export default function Portfolio() {
           <div className={styles.filmHeader}>
             <ScrollReveal variant="fadeUp">
               <span className={`glass-badge ${styles.filmBadge}`}>DIRECTORIAL DEBUT • FEATURE FILM</span>
-              <h2 className={`${styles.filmTitle} text-champagne-gold glow-text-gold kinetic-hover`}>
-                Aarti: The Unknown Love Story
-              </h2>
+              <a href="https://www.youtube.com/watch?v=7xEfcMbcNq0&t=2s" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                <h2 className={`${styles.filmTitle} text-champagne-gold glow-text-gold kinetic-hover`}>
+                  Aarti: The Unknown Love Story
+                </h2>
+              </a>
               <p className={styles.filmByline}>
                 Written, Produced & Directed by <strong>Sarika Mahesh Mene</strong>
               </p>
@@ -53,15 +55,17 @@ export default function Portfolio() {
             <ScrollReveal variant="slideLeft">
               <div className={styles.posterSection}>
                 <div className={styles.posterFrame}>
-                  <Image
-                    src="/images/aarti-horizontal.jpeg"
-                    alt="Aarti The Unknown Love Story Official Image"
-                    width={600}
-                    height={400}
-                    className={styles.posterImage}
-                    priority
-                    unoptimized
-                  />
+                  <a href="https://www.youtube.com/watch?v=7xEfcMbcNq0&t=2s" target="_blank" rel="noopener noreferrer">
+                    <Image
+                      src="/images/aarti-horizontal.jpeg"
+                      alt="Aarti The Unknown Love Story Official Image"
+                      width={600}
+                      height={400}
+                      className={styles.posterImage}
+                      priority
+                      unoptimized
+                    />
+                  </a>
                   <div className={styles.posterOverlay}></div>
                 </div>
 
@@ -79,6 +83,13 @@ export default function Portfolio() {
                     <span className={styles.ratingPlatform}>BookMyShow</span>
                     <span className={styles.ratingDetail}>Audience Reviews</span>
                   </div>
+                </div>
+
+                {/* Watch Trailer button centered below ratings */}
+                <div className={styles.watchTrailerWrap}>
+                  <Button href="https://www.youtube.com/watch?v=7xEfcMbcNq0&t=2s" variant="primary" size="md" icon target="_blank" rel="noopener noreferrer">
+                    <Play size={16} style={{ marginRight: '6px', display: 'inline' }} /> Watch Trailer
+                  </Button>
                 </div>
               </div>
             </ScrollReveal>

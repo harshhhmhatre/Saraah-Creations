@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import SectionHeading from '@/components/ui/SectionHeading';
 import ScrollReveal from '@/components/animations/ScrollReveal';
 import Button from '@/components/ui/Button';
@@ -28,19 +29,38 @@ export default function Services() {
               <ScrollReveal variant="fadeUp">
                 <div className={styles.serviceHeader}>
                   <span className={styles.serviceIcon}>{service.icon}</span>
-                  <h2 className={styles.serviceTitle}>{service.title}</h2>
+                  <Link
+                    href={`/contact?service=${encodeURIComponent(service.title)}#enquiry`}
+                    className={styles.serviceTitleLink}
+                  >
+                    <h2 className={styles.serviceTitle}>{service.title}</h2>
+                  </Link>
                 </div>
                 <p className={styles.serviceDesc}>{service.description}</p>
 
                 <h4 style={{ marginBottom: '1rem', color: 'var(--gold)', letterSpacing: '1px', fontSize: 'var(--text-xs)', textTransform: 'uppercase' }}>
-                  KEY CAPABILITIES & OFFERINGS
+                  KEY CAPABILITIES & OFFERINGS (CLICK TO ENQUIRE)
                 </h4>
                 <div className={styles.subGrid}>
                   {service.subCategories.map((sub, i) => (
-                    <div key={i} className={styles.subItem}>
-                      {sub}
-                    </div>
+                    <Link
+                      key={i}
+                      href={`/contact?service=${encodeURIComponent(sub)}#enquiry`}
+                      className={styles.subItem}
+                    >
+                      <span>{sub}</span>
+                    </Link>
                   ))}
+                </div>
+
+                <div className={styles.serviceBlockFooter}>
+                  <Link
+                    href={`/contact?service=${encodeURIComponent(service.title)}#enquiry`}
+                    className={styles.serviceEnquireBtn}
+                  >
+                    <span>Enquire About {service.title}</span>
+                    <span>→</span>
+                  </Link>
                 </div>
               </ScrollReveal>
             </div>

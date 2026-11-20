@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { PlayCircle, Award, Star, Film, Sparkles, ExternalLink } from 'lucide-react';
+import { PlayCircle, Award, Star, Film, Sparkles, ExternalLink, Music } from 'lucide-react';
 import Button from '@/components/ui/Button';
 import SectionHeading from '@/components/ui/SectionHeading';
 import ScrollReveal from '@/components/animations/ScrollReveal';
@@ -89,9 +89,11 @@ export default function Home() {
           {/* Left: Text Column */}
           <div className={styles.featuredTextCol}>
             <span className={`glass-badge ${styles.featuredBadge}`}>FEATURED MARATHI CINEMA RELEASE</span>
-            <h2 className={`${styles.featuredTitle} text-fire-gradient kinetic-hover`}>
-              Aarti: The Unknown Love Story
-            </h2>
+            <a href="https://www.youtube.com/watch?v=7xEfcMbcNq0&t=2s" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+              <h2 className={`${styles.featuredTitle} text-fire-gradient kinetic-hover`}>
+                Aarti: The Unknown Love Story
+              </h2>
+            </a>
             <p className={styles.featuredSub}>
               Written, Produced & Directed by <strong>Sarika Mahesh Mene</strong> • <em>Marathi Feature Film</em>
             </p>
@@ -124,19 +126,24 @@ export default function Home() {
               <Button href="/press" variant="secondary" size="md">
                 Press & Media
               </Button>
+              <Button href="https://www.youtube.com/watch?v=0CP1TAFiVn0&list=PLY-TMj4iVg58" variant="secondary" size="md" icon target="_blank" rel="noopener noreferrer">
+                Watch Songs
+              </Button>
             </div>
           </div>
 
           {/* Right: Poster Image */}
           <div className={styles.featuredPosterWrap}>
-            <Image
-              src="/images/aarti-horizontal.jpeg"
-              alt="Aarti The Unknown Love Story Official Image"
-              width={600}
-              height={400}
-              className={styles.featuredPosterImg}
-              priority
-            />
+            <a href="https://www.youtube.com/watch?v=7xEfcMbcNq0&t=2s" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/images/aarti-horizontal.jpeg"
+                alt="Aarti The Unknown Love Story Official Image"
+                width={600}
+                height={400}
+                className={styles.featuredPosterImg}
+                priority
+              />
+            </a>
             <div className={styles.posterGlow}></div>
           </div>
         </div>

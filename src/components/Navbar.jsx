@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, Camera, Film } from 'lucide-react';
-import { Youtube, Linkedin } from '@/components/ui/SocialIcons';
+import { Youtube, Linkedin, Instagram } from '@/components/ui/SocialIcons';
 import ThemeToggle from '@/components/ThemeToggle';
 import styles from './Navbar.module.css';
 
@@ -71,6 +71,7 @@ export default function Navbar() {
           <div className={styles.socialNav}>
             <ThemeToggle showLabel={true} />
             <a href="https://youtube.com/@sarikamenepresesnts-saraah818?si=zVgF96TWQ3QxIUbJ" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className={styles.socialIcon}><Youtube size={18} /></a>
+            <a href="https://www.instagram.com/ssarrikamene/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className={styles.socialIcon}><Instagram size={18} /></a>
             <a href="https://www.linkedin.com/in/sarikamene?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className={styles.socialIcon}><Linkedin size={18} /></a>
           </div>
 
@@ -139,6 +140,7 @@ export default function Navbar() {
               <div className={styles.mobileFooter}>
                 <div className={styles.mobileSocials}>
                   <a href="https://youtube.com/@sarikamenepresesnts-saraah818?si=zVgF96TWQ3QxIUbJ" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className={styles.mobileSocialIcon}><Youtube size={20} /></a>
+                  <a href="https://www.instagram.com/ssarrikamene/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className={styles.mobileSocialIcon}><Instagram size={20} /></a>
                   <a href="https://www.linkedin.com/in/sarikamene?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className={styles.mobileSocialIcon}><Linkedin size={20} /></a>
                 </div>
                 <p>Film • Advertising • Graphics • Sales • Marketing</p>

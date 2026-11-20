@@ -142,6 +142,12 @@
   margin-top: var(--space-6);
 }
 
+.watchTrailerWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-5);
+}
+
 .ratingCardGold,
 .ratingCardGreen {
   text-align: center;
