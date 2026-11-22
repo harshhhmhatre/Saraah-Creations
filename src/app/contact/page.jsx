@@ -7,6 +7,7 @@ import { Youtube, Linkedin, Instagram } from '@/components/ui/SocialIcons';
 import SectionHeading from '@/components/ui/SectionHeading';
 import ScrollReveal from '@/components/animations/ScrollReveal';
 import Button from '@/components/ui/Button';
+import SendButton from '@/components/ui/SendButton';
 import { Card3D } from '@/components/ui/3d-card';
 import { servicesData } from '@/data/services';
 import styles from './contact.module.css';
@@ -195,9 +196,11 @@ function ContactContent() {
                       ></textarea>
                     </div>
 
-                    <Button type="submit" variant="primary" size="lg" icon={!submitting} disabled={submitting} style={{ width: '100%', justifyContent: 'center' }}>
-                      {submitting ? 'Sending...' : 'Send Message'}
-                    </Button>
+                    <div className={styles.formActions}>
+                      <SendButton type="submit" submitting={submitting}>
+                        {submitting ? 'Sending...' : 'Send Message'}
+                      </SendButton>
+                    </div>
                   </form>
                 )}
               </div>

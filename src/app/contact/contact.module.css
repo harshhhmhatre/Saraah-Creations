@@ -112,6 +112,14 @@
   min-height: 120px;
 }
 
+.formActions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: var(--space-6);
+}
+
 /* ---- Info Card ---- */
 .infoCard {
   background: var(--bg-card);
